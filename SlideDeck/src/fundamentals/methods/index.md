@@ -6,19 +6,19 @@ theme: league
 
 - So far we have learned a very linear approach to programming.
 
-- If we review our Hello World, it important to note the compiler reads each line of code from top to bottom until it executes the last line.
+- If we review our Hello World, its important to note the compiler reads each line of code from top to bottom until it executes the last line.
 
 - Likewise, all of our code resides in the <mark>main</mark>method.
 
 - As much as possible, we want to try to compartmentalize our code.
  
-- When we think about programming we want to consider we may not need to execute every line of code with each execution.
+- When we think about programming, we want to consider we may not need to execute every line of code with each execution.
 
 - One example may be accessing your email account. 
 
-- After you setup your email account, you do not want to have to perfom the same steps everytime you access your account. 
+- After you setup your email account, you do not want to have to perform the same steps everytime you access your account. 
 
-- Methods are a way of controlling code execution. Meaning reading and executing code as needed when needed.
+- Methods are a way of controlling code execution. Which means reading and executing code as needed when needed.
 
 ## ...You are already familiar with some methods 
 
@@ -29,7 +29,7 @@ Question time: What are some methods we have already encountered?
 </div>
 
 <div class="fragment">
-- Do you remember the term <mark>abstraction</mark> we referanced in a prior lecture? Mountian Dew ingrediants?
+- Do you remember the term <mark>abstraction</mark> we referenced in a prior lecture? Mountian Dew ingredients?
 </div>
 <div class="fragment">
 - Well methods are a form of abstraction. If we didnt have a <mark>Console.WriteLine()</mark> method, we would have to include all the code in the Console.WriteLine() method each time we wanted to print to the console.
@@ -38,12 +38,12 @@ Question time: What are some methods we have already encountered?
 - The command <mark>Console.WriteLine()</mark> is actually what we term as a <mark>method call</mark>.
 </div>
 <div class="fragment">
-- We can use the <mark>Console.WriteLine() method call</mark> when neccessary, which intern keeps our code clean, shorter in length, and efficient.
+- We can use the <mark>Console.WriteLine() method call</mark> when neccessary, which in turn keeps our code clean, shorter in length, and efficient.
 </div>
 
 ## Step through the structure
 
-- Lets discuss a methods using an example we are already familiar with called the <mark>main</mark> method.
+- Lets discuss methods using an example we are already familiar with called the <mark>main</mark> method.
 
 <pre><code class="language-C#" data-noescape>
     class Program
@@ -59,7 +59,7 @@ Question time: What are some methods we have already encountered?
 
 - All methods must reside in a <mark>class</mark>!!
 
-- The main menu is created by default by Visual Studio, when your project is created.
+- The main menu is created by default by Visual Studio when your project is created.
 
 - Unlike other methods, the main method by default is the start of an application.
 
@@ -71,13 +71,13 @@ Question time: What are some methods we have already encountered?
 
 - Lets walk through each characteristic starting with <mark>Modifiers/Access Level</mark>
 
-- Modifiers/Access level are characteristics we use to set access to our code.
+- Modifiers/Access levels are characteristics we use to set access to our code.
 
 - Some of the Modifiers/Access level keywords you will encounter are <mark>Public</mark>, <mark>Private</mark>, <mark>Protected</mark>, <mark>Internal</mark> and <mark>Static</mark>.
 
 - We will define all these keywords, but the three you will become most familiar with are <mark>Public</mark>, <mark>Private</mark> and <mark>Static</mark>.
 
-	- <mark>Public</mark>: This type or method can be accessed by any other code in the same namespace or another namespace that references it.
+	- <mark>Public</mark>: The type or method can be accessed by any other code in the same namespace or another namespace that references it.
 
 	- <mark>Private</mark>: The type or method can be accessed only by code in the same class.
 
@@ -103,9 +103,11 @@ namespace HelloWorld
 }
 </code></pre> 
 
-- Given the definitions we just reviewed, because main is <mark>static</mark> it can be accessed by any other class in the Hello World namespace without <mark>instantiating</mark> an instance of that class</mark>.
+- Given the definitions we just reviewed, because main is <mark>static</mark> it can be accessed by any other class in the Hello World namespace.
 
-- This make absolutely no sense to you right now, but we will be experts at <mark>instantiation</mark> when we learn OOP.
+- It can be accessed without <mark>instantiating</mark> an instance of that class.
+
+- This makes absolutely no sense to you right now, but we will be experts at <mark>instantiation</mark> when we learn OOP.
 
 - By default the <mark>main</mark> method is private.
 
@@ -136,7 +138,7 @@ namespace HelloWorld
 
 - The main method is an example of a <mark>void</mark> which means the method will not return a value when executed.
 
-- Let me reiterate unlike type methods, void methods <mark>do not</mark> return a value.
+- Let me reiterate, unlike type methods, void methods <mark>do not</mark> return a value.
 
 ## ...MethodName
 
@@ -153,7 +155,7 @@ namespace HelloWorld
 }
 </code></pre> 
 
-- Well there is to much to say about this characteristic.
+- Well there is not to much to say about this characteristic.
 
 - Remember to give your methods a name that describes their purpose or function.
 
@@ -186,15 +188,15 @@ namespace HelloWorld
 
 - Here is an example of a simple C# console application.
 
-- This appliction is run at the commang line.
+- This application is executed at the command line.
 
-- At the command line the user enter one or more values. These values could be any data. 
+- At the command line the user enters one or more values. These values could be any data. 
 
 - At the command line we will execute our console application like such: <mark>MyApp.exe</mark>.
 
 - We will pass three arguments into our application: <mark>MyApp.exe "Pete" "is" "crazy"</mark>.
 
-- We execute our application, here is what happens.
+- When we execute our application, here is what happens.
 
 <pre><code class="language-C#" data-noescape>
 class Program
@@ -234,11 +236,11 @@ Question time: What values will be printed to the console and in what order?
 
 ## Lets experiment
 
-- Now that we have an idea about methods and at least have some understangin of their operation, lets do some coding.
+- Now that we have an idea about methods and at least have some understanding of their operation, lets do some coding.
 
 - Lets use our Hello World program and create a few methods.
 
-- Open you Hello World program, and comment out the code in part fourteen.
+- Open your Hello World program, and comment out the code in part fourteen.
 
 - In part fifteen we will create three example methods: bool, string, int[]. 
 
@@ -247,7 +249,7 @@ Question time: What values will be printed to the console and in what order?
 
 <div float="right" class="img"><img src="./resources/methods1.png" /></div>
 
-- Volunterr time
+- Volunteer time
 
 - The first method we will create will receive our <mark>ageOne</mark> value, perform a modulus operation, and finally update the <mark>isGodLike</mark> bool. 
 
@@ -263,11 +265,11 @@ Question time: What values will be printed to the console and in what order?
 
 <div float="right" class="img"><img src="./resources/methods2.png" /></div>
 
-- The second <mark>}</mark> is the closing brace for the Program class
+- The second <mark>}</mark> is the closing brace for the Program class.
 
 <div float="right" class="img"><img src="./resources/methods3.png" /></div>
 
-- We want to write all our methods inbetween these two curly braces.
+- We want to write all our methods in between these two curly braces.
 
 <div float="right" class="img"><img src="./resources/methods4.png" /></div>
 
@@ -402,13 +404,11 @@ class Program
 
 - We have covered in detail the parts, characteristics, and process of C# methods.
 
-- I stepped you through two methods and volunteers stepped me though two methods.
+- I would like to say this is all you will need to know about methods, but we know that wouldnt be true.
 
-- I would love to say this is all you will need to know about methods, but we know that wouldnt be true.
+- When you learn about OOP, you will learn about virtual, abstract and override methods to name a few.
 
-- When we learn about OOP, we will learn about virtual, abstract and override methods to name a few.
-
-- We also will learn how important access levels are in mulitple class programs.
+- You also will learn how important access levels are in mulitple class programs.
 
 - As always the best way to learn about methods is to code code code.
 <style type="text/css">
