@@ -348,7 +348,7 @@ Question time: If we execute this code, what value do you think will be returned
 - Insert the following code into your Hello World program and then execute.
 
 ```C# 
-string[] elements = messageTwo.Split('<mark> </mark>');
+string[] elements = messageTwo.Split(' ');
 Console.WriteLine(elements[0]); // prints "I"
 Console.WriteLine(elements[1]); // prints "am"
 Console.WriteLine(elements[2]); // prints "Spartacus"
