@@ -38,38 +38,39 @@ theme: league
 
 ## Objects have two types of attributes
 
-        - States
+- States
+ and
+- Behaviors 
         
-            and
-
-        - Behaviors 
-        
-        At this point it's beneficial for us to talk about objects in terms of States and Behaviors. Later on we'll clarify what these are in an actual C# object.
+- At this point it's beneficial for us to talk about objects in terms of States and Behaviors. Later on we'll clarify what these are in an actual C# object.
 
 
 ## States 
 
-      States are information that further describe the object. If we think about states for a `Cat` object it might have the following states.
+- States are information that further describe the object. 
+- If we think about states for a `Cat` object it might have the following states.
         - Name
         - Age
         - Fur Color
     
-        These are all things that our cat object _is_. What other states can you think of?
+These are all things that our cat object _is_. What other states can you think of?
 
 ## Behaviors
 
-        Behaviors are actions the object can perform. Thinking about our `Cat` object again lets think about its behaviors. It might have some of the following behaviors.
+- Behaviors are actions the object can perform. Thinking about our `Cat` object again lets think about its behaviors. 
+- It might have some of the following behaviors.
         - Eat 
         - Meow
         - Walk
 
-        These are all things our `Cat` object can _do_. What other behaviors can you think of?
+These are all things our `Cat` object can _do_. What other behaviors can you think of?
 
 !SLIDE 
 
-    - Instances of objects need to be created before they can be used. All objects of a specific type are created from the same template. This means they all have the same number and type of states, but each instance can have it's own unique values.
+- Instances of objects need to be created before they can be used. All objects of a specific type are created from the same template. This means they all have the same number and type of states, but each instance can have it's own unique values.
     
-    - The format we'd use to _initialize_ our cat object would look like the following:
+- The format we'd use to _initialize_ our cat object would look like the following:
+
 ```csharp
     Cat mittens = new Cat();
 ```
@@ -154,7 +155,11 @@ class Cat
         this.furColor = furColor
 
     }
+```
 
+## Below our Constructors, we'll include a method
+
+```csharp
     public void Eat()
     {
         if(isHungry)
@@ -180,7 +185,7 @@ class Cat
 !SLIDE
 
 - Our class `cat` has two constructors. We're allowed as many constructors as we need as long as they each have a unique signature. 
-- Our fist constructor is a default constructor that doesn't do any thing. 
+- Our first constructor is a default constructor that doesn't do any thing. 
 - Our second constructor takes a string, an int, and a string as parameters. 
 - Our constructors <mark>always share the same name</mark>!! 
 

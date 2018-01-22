@@ -67,40 +67,44 @@ Yes, so that's a hint that the student's full name could not be the key.
 !SLIDE
 
 - Let's add items to our vending machine dictionary.
-  ```CSharp
+
+<pre><code class="language-C#" data-noescape>
      Dictionary<string,string>snackMachine = new Dictionary<string,string>()
      {
         {"A1", "Twix"},
         {"A2", "Twizzlers"},
         {"A3", "Hershey's"}
      }
-  ```
+</code></pre> 
 
 !SLIDE
 
   - We can print the items in our dictionary using a foreach loop:
-  ```CSharp
+
+<pre><code class="language-C#" data-noescape>
      foreach(KeyValuePair<string,string> item in snackMachine)
      {
         Console.WriteLine(item);
      }
-  ```
+</code></pre> 
 
 !SLIDE
 
   - You may also see the foreach loop using the general keyword `var` for the data types of the KeyValuePair. 
   - Recognize what it is, but do not do this. Use the implicit version in the previous slide:
-  ```CSharp
+
+<pre><code class="language-C#" data-noescape>
      foreach(var item in snackMachine)
      {
         Console.WriteLine(item);
      }
-  ```
+</code></pre> 
 
 !SLIDE
 
 - Now, let's try creating a dictionary for the drink vending machine. This time, we do not know what items we want to add to our dictionary initially.
-  ```CSharp
+
+<pre><code class="language-C#" data-noescape>
      Dictionary<int,string>drinkMachine = new Dictionary<int,string>();
      
      //Using the Add method, let's add drinks to our drinks vending machine. This vending machine uses number to access the items versus a combination of numbers and letters (i.e. A4 in the snackMachine).
@@ -111,14 +115,15 @@ Yes, so that's a hint that the student's full name could not be the key.
      drinkMachine.Add(13, "Fruit Punch");
      drinkMachine.Add(14, "Sparking Water");
      drinkMachine.Add(15, "Sports Drink");
-  ```
+</code></pre> 
 
 !SLIDE
 
   - Use the Count property to ensure all 6 drinks have been added to your drinks vending machine.
-  ```CSharp
+
+<pre><code class="language-C#" data-noescape>
      Console.WriteLine(drinkMachine.Count);
-  ```
+</code></pre> 
 <div class="fragment">
 - Like lists and arrays, dictionaries also come with built-in properties and methods you can use (See Common Properties & Methods above).
 </div>
@@ -126,33 +131,58 @@ Yes, so that's a hint that the student's full name could not be the key.
 !SLIDE
 
 - Let's say you only want to print the keys in the dictionary, you can use `.Key`:
-```CSharp
+
+<pre><code class="language-C#" data-noescape>
    foreach(KeyValuePair<int,string> drink in drinkMachine)
    {
       Console.WriteLine(drink.Key);
    }
-```
+</code></pre> 
 
 !SLIDE
 
 - This time, let's use `.Value` to print the drinks in our vending machine:
-```CSharp
+
+<pre><code class="language-C#" data-noescape>
    foreach(KeyValuePair<int,string> drink in drinkMachine)
    {
       Console.WriteLine(drink.Value);
    }
-```
+</code></pre> 
 
-## Do It
+!SLIDE
+<div>
+ - Come up with an example for each property and method listed in the Common Properties & Methods section.
+</div>
+<div class="fragment">
+ - Create a dictionary for a theater coat check with 10 elements. The key will be a number and the Value will be the coat style. Print all elements to the console.
+ </div>
+ <div class="fragment">
+ - Create a dictionary for a car valet service with 10 cars. The key will be the customer’s last name and the value will be the car make. Print all elements to the console.
+ </div>
+ <div class="fragment">
+ - Create a dictionary of 10 zoo animals. The key will be the animal type and the value will be the number of animals at the zoo. Print the animal with the highest quantity to the console.
+ </div>
 
-- Come up with an example for each property and method listed in the Common Properties & Methods section.
-- Create a dictionary for a theater coat check with 10 elements. The key will be a number and the Value will be the coat style. Print all elements to the console.
-- Create a dictionary for a car valet service with 10 cars. The key will be the customer’s last name and the value will be the car make. Print all elements to the console.
-- Create a dictionary of 10 zoo animals. The key will be the animal type and the value will be the number of animals at the zoo. Print the animal with the highest quantity to the console.
+!SLIDE
 
-## Do It continued
+<div>
+ - Remove the zoo animal with the lowest quantity from the dictionary using the Remove method. 
+ </div>
+<div class="fragment"> 
+ - Use the Count property to count the number of remaining entries in the dictionary. Print to the console.
+ </div>
+<div class="fragment"> 
+ - Create a program that allows a user to input an animal name to check to see if the dictionary contains that animal name.
+ </div>
+<div class="fragment"> 
+ - If the animal does not exist in the dictionary, ask the user if he/she would like to add it. If so, add the animal to the dictionary.
+ </div>
 
-- Remove the zoo animal with the lowest quantity from the dictionary using the Remove method. 
-- Use the Count property to count the number of remaining entries in the dictionary. Print to the console.
-- Create a program that allows a user to input an animal name to check to see if the dictionary contains that animal name.
-- If the animal does not exist in the dictionary, ask the user if he/she would like to add it. If so, add the animal to the dictionary.
+
+<style type="text/css">
+/* should we move this into the template, or will it break existing slides. Maybe those slides are wrong. */
+.reveal h3 {
+	font-size: 4.4rem;	
+}
+</style>
