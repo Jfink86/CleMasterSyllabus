@@ -398,38 +398,21 @@ internal - can only be accessed from the same assembly (default for classes) →
 <div class="fragment"> - Create an override method in each derived class.</div>
 
 
-        </section>
-        
-        <section>
-          <!-- _S9SLIDE_  -->
-
-<ul>
-  <li>Our class <code>cat</code> has two constructors. We’re allowed as many constructors as we need as long as they each have a unique signature.</li>
-  <li>Our first constructor is a default constructor that doesn’t do any thing.</li>
-  <li>Our second constructor takes a string, an int, and a string as parameters.</li>
-  <li>Our constructors <mark>always share the same name</mark>!!</li>
-</ul>
-
 
         </section>
         
         <section>
-          <!-- _S9SLIDE_  -->
+          <!-- _S9SLIDE_ -->
+<h2 id="abstract-classes">Abstract Classes</h2>
 
 <ul>
-  <li>The keyword <code>this</code> allows us to select only the field, the variable that belongs to the class.</li>
-  <li>In a situation where a method’s parameter and a field have the same name we can use the keyword <code>this</code> to differentiate the two.</li>
+  <li>What is an abstract class?</li>
 </ul>
-
-
-        </section>
-        
-        <section>
-          <!-- _S9SLIDE_  -->
-
-<ul>
-  <li>We have a public method <code>Eat</code>. The return type is void, which means after it completes it doesn’t provide us any new information.</li>
-</ul>
+<div class="fragment">
+- An abstract class should be used when instances will be created from derived classes only.
+</div>
+<div class="fragment">- An abstract class can not be instantiated.</div>
+<div class="fragment">- Abstract classes can have abstract, virtual, and normal methods.</div>
 
 
 
@@ -437,26 +420,12 @@ internal - can only be accessed from the same assembly (default for classes) →
         
         <section>
           <!-- _S9SLIDE_ -->
-<h2 id="do-it">Do It</h2>
+<h2 id="abstract-keyword">“abstract” keyword</h2>
+
 <ul>
-  <li>Create a class Dog</li>
-  <li>The class Dog should have the following fields
-    <ul>
-      <li>hairLength</li>
-      <li>height</li>
-      <li>runningSpeed</li>
-      <li>weight</li>
-    </ul>
-  </li>
-  <li>The class should have the following behaviors
-    <ul>
-      <li>Run()</li>
-      <li>Bark()</li>
-      <li>Potty()</li>
-      <li>Cuddle()</li>
-    </ul>
-  </li>
+  <li>Use the abstract keyword to denote a class or method that you do not want to be implemented.</li>
 </ul>
+<div class="fragment">Abstract methods can only be placed inside of abstract classes.</div>
 
 
 
@@ -464,27 +433,62 @@ internal - can only be accessed from the same assembly (default for classes) →
         
         <section>
           <!-- _S9SLIDE_ -->
-<h2 id="do-it-1">Do It</h2>
-<ul>
-  <li>Create a class Superhero</li>
-  <li>The class Superhero should have 4 fields
-    <ul>
-      <li>An example might be strengthLevel or hasCape</li>
-    </ul>
-  </li>
-  <li>The class Superhero should have 4 Properties
-    <ul>
-      <li>An example might be StrengthLevel or SecretIdentity</li>
-    </ul>
-  </li>
-  <li>The class Superhero should have 3 Constructors</li>
-  <li>The class Superhero should have at least two methods
-    <ul>
-      <li>One method should impact the Superhero’s health (could be Health, could be StrengthLevel, could be Speed, etc.)</li>
-      <li>One method should give your Superhero a power boost. (could be EatsSpinach() or AbsorbsYellowSun(), etc.)</li>
-    </ul>
-  </li>
-</ul>
+<h2 id="something-peculiar-about-abstract-classes">Something peculiar about Abstract classes</h2>
+
+<p>An abstract method <mark>does NOT</mark> need a body.</p>
+
+<p>In fact, abstract methods usually <mark>do NOT</mark> have a body.</p>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
+<h2 id="example-of-abstract-class">Example of Abstract Class</h2>
+
+<pre><code class="language-csharp">public abstract class Appliances
+{
+	public abstract void Clean();
+	// an abstract method does not 
+	// have a body
+}
+</code></pre>
+<p><mark>NOTE:</mark> An appliance is a good example of an abstract class, because you would never just create an “Appliance” object, you would create a type of appliance, like a “Toaster”.</p>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
+<h2 id="class-derived-from-abstract-class">Class Derived from Abstract Class</h2>
+
+<pre><code class="language-csharp">class Dishwasher : Appliances
+{
+	public override void Clean()
+	{
+		// in the derived class, use the 
+              // override keyword to rewrite 
+			// an abstract method from the 
+			// base class
+	}
+}
+</code></pre>
+<div class="fragment">Let me repeat that ... we use the OVERRIDE keyword in the derived class with abstract methods from the base class.</div>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
+<h2 id="practice-2">PRACTICE!!</h2>
+
+<p>Create an abstract Account class.</p>
+<div class="fragment">Create two derived classes from the base Account class.</div>
+<div class="fragment">Create an abstract method in the base Account class.</div>
+<div class="fragment">Override that method in your derived classes.</div>
 
 <style type="text/css">
 /* should we move this into the template, or will it break existing slides. Maybe those slides are wrong. */

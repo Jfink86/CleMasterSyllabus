@@ -236,45 +236,65 @@ class WashingMachine : Appliance
 <div class="fragment"> - Create a virtual method in the base class. </div>
 <div class="fragment"> - Create an override method in each derived class.</div>
 
-!SLIDE
+## Abstract Classes
 
-- Our class `cat` has two constructors. We're allowed as many constructors as we need as long as they each have a unique signature. 
-- Our first constructor is a default constructor that doesn't do any thing. 
-- Our second constructor takes a string, an int, and a string as parameters. 
-- Our constructors <mark>always share the same name</mark>!! 
+- What is an abstract class?
+<div class="fragment">
+- An abstract class should be used when instances will be created from derived classes only.
+</div> 
+<div class="fragment">- An abstract class can not be instantiated.</div>
+<div class="fragment">- Abstract classes can have abstract, virtual, and normal methods.</div>
 
-!SLIDE
 
-- The keyword `this` allows us to select only the field, the variable that belongs to the class. 
-- In a situation where a method's parameter and a field have the same name we can use the keyword `this` to differentiate the two.
+## "abstract" keyword
 
-!SLIDE
+- Use the abstract keyword to denote a class or method that you do not want to be implemented.
+<div class="fragment">Abstract methods can only be placed inside of abstract classes.</div>
 
-- We have a public method `Eat`. The return type is void, which means after it completes it doesn't provide us any new information.
+## Something peculiar about Abstract classes
 
-## Do It
- - Create a class Dog
- - The class Dog should have the following fields
-   - hairLength
-   - height
-   - runningSpeed
-   - weight
- - The class should have the following behaviors
-   - Run()
-   - Bark()
-   - Potty()
-   - Cuddle()
-   
-## Do It
- - Create a class Superhero
- - The class Superhero should have 4 fields
-   - An example might be strengthLevel or hasCape
- - The class Superhero should have 4 Properties
-   - An example might be StrengthLevel or SecretIdentity
- - The class Superhero should have 3 Constructors
- - The class Superhero should have at least two methods
-   - One method should impact the Superhero's health (could be Health, could be StrengthLevel, could be Speed, etc.)
-   - One method should give your Superhero a power boost. (could be EatsSpinach() or AbsorbsYellowSun(), etc.)
+An abstract method <mark>does NOT</mark> need a body.
+
+In fact, abstract methods usually <mark>do NOT</mark> have a body.
+
+
+## Example of Abstract Class
+
+```csharp
+public abstract class Appliances
+{
+	public abstract void Clean();
+	// an abstract method does not 
+	// have a body
+}
+```
+<mark>NOTE:</mark> An appliance is a good example of an abstract class, because you would never just create an "Appliance" object, you would create a type of appliance, like a "Toaster".
+
+## Class Derived from Abstract Class 
+
+```csharp
+class Dishwasher : Appliances
+{
+	public override void Clean()
+	{
+		// in the derived class, use the 
+              // override keyword to rewrite 
+			// an abstract method from the 
+			// base class
+	}
+}
+```
+<div class="fragment">Let me repeat that ... we use the OVERRIDE keyword in the derived class with abstract methods from the base class.</div>
+
+## PRACTICE!!
+
+Create an abstract Account class.
+<div class="fragment">Create two derived classes from the base Account class.</div>
+<div class="fragment">Create an abstract method in the base Account class.</div>
+<div class="fragment">Override that method in your derived classes.</div>
+
+
+
 
 <style type="text/css">
 /* should we move this into the template, or will it break existing slides. Maybe those slides are wrong. */
