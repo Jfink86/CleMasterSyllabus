@@ -8,6 +8,13 @@ theme: league
  - What is Polymorphism?
  - Why are these principles essential to Object Oriented Programming?
 
+## Inheritance
+- In object-oriented programing, inheritance is a feature that demonstrates the "IS A" relationship between different classes.
+- For example, a TIGER is a CAT.
+- Inheritance allows a class to have the same states and behaviors as another class.
+- Inheritance also allows derived classes to customize that behavior for the sake of specificity.
+- For example, all cats EAT, but tigers EAT a certain way.
+
 ## Example of a Base Class
 
 ```csharp
@@ -160,7 +167,11 @@ In Visual Studio, open a new project and create a base class and 2 classes that 
 <div class="fragment">Add two methods to your derived classes.</div>
 <div class="fragment">Add a method to your base class and use it in both of your derived classes.</div>
 
+## Polymorphism
 
+- Polymorphism is the ability to redefine methods for derived classes.
+- The Latin roots - "poly" for "many" and "morph" for form - tells us that this principle allows us to have one method take many forms.
+- In order to incorporate polymorphism in C#, we need to use the `virtual` and `override` keywords.
 
 ## “virtual” keyword
 
@@ -175,7 +186,7 @@ In order to give the derived classes permission to create their own version of a
 ## Example
 
 ```csharp
-class Appliances
+class Appliance
 {
 	public virtual void Clean()
 	{
@@ -193,18 +204,37 @@ public override void Clean()
 	// body of the method
 }
 ```
-When implementing a new version of the method in the derived class, add the keyword override. 
+When implementing a new version of the method in the derived class, add the keyword `override`. 
 
-## Breaking down each part of our class
+## Override Examples
 
-- In the class we defined a number of fields at the top. These are where we store all the information that belongs to each instance(our object) of our class. 
-- Remember, each instance comes from the same template. That means each object created from this class will have the same fields, but each instances variables will hold unique values. 
-- We use camel case when we name our fields.
+```csharp
+class Dishwasher : Appliance
+{
+	public override void Clean()
+	{
+		// specific instructions for how
+              // a dishwasher cleans
+	}
+}
+```
+```csharp
+class WashingMachine : Appliance
+{
+	public override void Clean()
+	{
+		// specific instructions for how
+           // a washing machine cleans
+	}
+}
+```
 
-!SLIDE
+## PRACTICE!!
 
-- We have a public property called `Name`. This will allow for code outside of our class to access the field called `name`.  
-- Properties should be named Pascal case, this is important as it differentiate it from our fields.
+- Create a new base class.
+<div class="fragment"> - Create two derived classes. </div>
+<div class="fragment"> - Create a virtual method in the base class. </div>
+<div class="fragment"> - Create an override method in each derived class.</div>
 
 !SLIDE
 

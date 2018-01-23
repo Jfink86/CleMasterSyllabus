@@ -72,6 +72,21 @@
         
         <section>
           <!-- _S9SLIDE_ -->
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+  <li>In object-oriented programing, inheritance is a feature that demonstrates the “IS A” relationship between different classes.</li>
+  <li>For example, a TIGER is a CAT.</li>
+  <li>Inheritance allows a class to have the same states and behaviors as another class.</li>
+  <li>Inheritance also allows derived classes to customize that behavior for the sake of specificity.</li>
+  <li>For example, all cats EAT, but tigers EAT a certain way.</li>
+</ul>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
 <h2 id="example-of-a-base-class">Example of a Base Class</h2>
 
 <pre><code class="language-csharp">public class Shape
@@ -284,6 +299,20 @@ internal - can only be accessed from the same assembly (default for classes) →
         
         <section>
           <!-- _S9SLIDE_ -->
+<h2 id="polymorphism">Polymorphism</h2>
+
+<ul>
+  <li>Polymorphism is the ability to redefine methods for derived classes.</li>
+  <li>The Latin roots - “poly” for “many” and “morph” for form - tells us that this principle allows us to have one method take many forms.</li>
+  <li>In order to incorporate polymorphism in C#, we need to use the <code>virtual</code> and <code>override</code> keywords.</li>
+</ul>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
 <h2 id="virtual-keyword">“virtual” keyword</h2>
 
 <pre><code class="language-csharp">public virtual void Clean()
@@ -301,7 +330,7 @@ internal - can only be accessed from the same assembly (default for classes) →
           <!-- _S9SLIDE_ -->
 <h2 id="example">Example</h2>
 
-<pre><code class="language-csharp">class Appliances
+<pre><code class="language-csharp">class Appliance
 {
 	public virtual void Clean()
 	{
@@ -324,7 +353,7 @@ internal - can only be accessed from the same assembly (default for classes) →
 	// body of the method
 }
 </code></pre>
-<p>When implementing a new version of the method in the derived class, add the keyword override.</p>
+<p>When implementing a new version of the method in the derived class, add the keyword <code>override</code>.</p>
 
 
 
@@ -332,24 +361,41 @@ internal - can only be accessed from the same assembly (default for classes) →
         
         <section>
           <!-- _S9SLIDE_ -->
-<h2 id="breaking-down-each-part-of-our-class">Breaking down each part of our class</h2>
+<h2 id="override-examples">Override Examples</h2>
 
-<ul>
-  <li>In the class we defined a number of fields at the top. These are where we store all the information that belongs to each instance(our object) of our class.</li>
-  <li>Remember, each instance comes from the same template. That means each object created from this class will have the same fields, but each instances variables will hold unique values.</li>
-  <li>We use camel case when we name our fields.</li>
-</ul>
+<pre><code class="language-csharp">class Dishwasher : Appliance
+{
+	public override void Clean()
+	{
+		// specific instructions for how
+              // a dishwasher cleans
+	}
+}
+</code></pre>
+<pre><code class="language-csharp">class WashingMachine : Appliance
+{
+	public override void Clean()
+	{
+		// specific instructions for how
+           // a washing machine cleans
+	}
+}
+</code></pre>
+
 
 
         </section>
         
         <section>
-          <!-- _S9SLIDE_  -->
+          <!-- _S9SLIDE_ -->
+<h2 id="practice-1">PRACTICE!!</h2>
 
 <ul>
-  <li>We have a public property called <code>Name</code>. This will allow for code outside of our class to access the field called <code>name</code>.</li>
-  <li>Properties should be named Pascal case, this is important as it differentiate it from our fields.</li>
+  <li>Create a new base class.</li>
 </ul>
+<div class="fragment"> - Create two derived classes. </div>
+<div class="fragment"> - Create a virtual method in the base class. </div>
+<div class="fragment"> - Create an override method in each derived class.</div>
 
 
         </section>
