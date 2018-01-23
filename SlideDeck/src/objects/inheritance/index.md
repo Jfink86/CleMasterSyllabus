@@ -1,78 +1,92 @@
-title: Introduction to Object Oriented Programming
-subtitle: The Fundamentals of OOP
+title: Inheritance and Polymorphism
+subtitle: Two Important Principles of OOP
 theme: league
 
 ## Topics
 
- - What is Object Oriented Programming?
- - Why would you use Object Oriented Programming?
- - What are best practices in Object Oriented Programming?
- - When would you not use OOP?
+ - What is Inheritance?
+ - What is Polymorphism?
+ - Why are these principles essential to Object Oriented Programming?
 
-## Goals
-
- - Understand the basics of Object-Oriented Programming
-    - Classes
-    - Objects
- - Create and use objects
- - Access fields
- - Call methods
-    - Using constructors
- - Learn the benefits of namespaces
- 
-
-## Introduction to Object Oriented Programming
-
-- Object-Oriented Programming
-    - Object-Oriented Programming is a way of structuring our programs to mimic real world objects.
-    - It helps us understand how the program should function, what different parts do, and how we can use it.
-    - Objects can be based off of real world objects:
-        - Cat
-        - Car
-        - Bicycle
-
-        Or based on abstract concepts:
-        - List
-        - System.Net
-        - DateTime
-
-## Objects have two types of attributes
-
-- States
- and
-- Behaviors 
-        
-- At this point it's beneficial for us to talk about objects in terms of States and Behaviors. Later on we'll clarify what these are in an actual C# object.
-
-
-## States 
-
-- States are information that further describe the object. 
-- If we think about states for a `Cat` object it might have the following states.
-        - Name
-        - Age
-        - Fur Color
-    
-These are all things that our cat object _is_. What other states can you think of?
-
-## Behaviors
-
-- Behaviors are actions the object can perform. Thinking about our `Cat` object again lets think about its behaviors. 
-- It might have some of the following behaviors.
-        - Eat 
-        - Meow
-        - Walk
-
-These are all things our `Cat` object can _do_. What other behaviors can you think of?
-
-!SLIDE 
-
-- Instances of objects need to be created before they can be used. All objects of a specific type are created from the same template. This means they all have the same number and type of states, but each instance can have it's own unique values.
-    
-- The format we'd use to _initialize_ our cat object would look like the following:
+## Example of a Base Class
 
 ```csharp
-    Cat mittens = new Cat();
+public class Shape
+{
+    private int sides;
+ 
+    public Shape()
+    {
+
+    }
+    public Shape(int sides)
+    {
+        this.sides = sides;
+    }
+ 
+    public int Sides
+    {
+        get { return this.sides; }
+        set { this.sides = value; }
+    }
+}
+```
+ 
+
+## Derived Classes
+
+- A derived class (also called a child class or a subclass) is any class that inherits from another class.
+- To create a derived class, include a colon and the name of the base class.
+
+```csharp
+//Example:
+public class ChildClass : ParentClass
+```
+
+
+## Example of Derived Class
+
+```csharp
+public class Rectangle : Shape
+{
+    private double area;
+ 
+    public Rectangle(double area)
+    {
+        this.area = area;
+    }
+ 
+    public double Area
+    {
+        get { return this.area; }
+        set { this.area = value; }
+    }
+}
+```
+
+## Your Turn! 
+
+- What are some examples of base classes? 
+<div class="fragment">
+- What are some examples of classes that could be derived from those base classes?
+</div>
+
+## Members of a Derived Class
+
+- In OOP, the states and behaviors of a class are, all together, called the "members" of that class.
+- Let's talk about what makes the members of a derived class different from the members of a base class.
+
+## Constructors 
+
+- A derived class does NOT inherit the constructors of the base class.
+- However, the constructors of the base class can still be accessed using the “base” keyword.
+
+```csharp
+public ChildClass(int num) : base(“string”)
+{
+        // body of constructor
+}
+
 ```
 !SLIDE 
 
