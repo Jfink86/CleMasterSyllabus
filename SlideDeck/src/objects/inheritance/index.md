@@ -1,4 +1,4 @@
-title: Inheritance and Polymorphism
+Ôªøtitle: Inheritance and Polymorphism
 subtitle: Two Important Principles of OOP
 theme: league
 
@@ -79,31 +79,52 @@ public class Rectangle : Shape
 ## Constructors 
 
 - A derived class does NOT inherit the constructors of the base class.
-- However, the constructors of the base class can still be accessed using the ìbaseî keyword.
+- However, the constructors of the base class can still be accessed using the ‚Äúbase‚Äù keyword.
 
 ```csharp
-public ChildClass(int num) : base(ìstringî)
+public ChildClass(int num) : base(‚Äústring‚Äù)
 {
         // body of constructor
 }
 
 ```
-!SLIDE 
-
--  Let's break this down piece by piece. Focusing on the left side of the equals sign we have:
-```csharp 
-    Cat mittens 
-```
-- This is the same form we've seen since day one. The type of the variable come first, followed by the name of the variable. The type of our variable here is `Cat` and our variable is called `mittens`. 
-- Instead of storing an int or string like we've seen so far, this variable stores an _instance_ of a `Cat` object.
-
-!SLIDE
+## Base Constructor Example 
 
 ```csharp 
-    new Cat(); 
+public class Rectangle : Shape
+{
+    private double area;
+ 
+    public Rectangle(double area) : base(4)
+    {
+        this.area = area;
+    }
+ 
+    public double Area
+    {
+        get { return this.area; }
+        set { this.area = value; }
+    }
+}
 ```
-The part after the equals sign is where we initialize our object. `new` is a keyword we use to instantiate an object and invoke the constructor. 
-`Cat();` is the <mark>constructor</mark> being called. We need both of these parts to instantiate an object. 
+- By including the `base(4)`, the public `Shape(int sides)` is included and sets sides equal to 4. 
+
+
+## Access Modifiers in Derived Classes
+
+Let's review access modifiers
+<div class="fragment">
+public - can be accessed from every class
+</div>
+<div class="fragment">
+private - can not be accessed from any other class (default for elements of a class)
+</div>
+<div class="fragment">
+<mark>protected - can be accessed from its class and all descendent classes</mark>
+</div>
+<div class="fragment">
+internal - can only be accessed from the same assembly (default for classes) ‚Üí More later.
+</div>
 
 ## Building classes
 
