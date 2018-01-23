@@ -126,86 +126,75 @@ private - can not be accessed from any other class (default for elements of a cl
 internal - can only be accessed from the same assembly (default for classes) → More later.
 </div>
 
-## Building classes
+## Access Modifiers Example
 
-All classes start out with the keyword `class` followed by the name of the class. We can choose any name we like as long as it hasn't been used already.
-
-Here we are defining a `class Cat`. It doesn't contain anything yet.
 ```csharp
-class Cat
+public class Rectangle : Shape
 {
+    private double area;
+ 
+    public Rectangle(int sides, double area)
+    {
+        this.Sides = sides;
+        this.area = area;
+    }
+ 
+    public double Area
+    {
+        get { return this.area; }
+        set { this.area = value; }
+    }
+}
+```
+QUESTION: Why do we have to use the property `Sides` in the `Rectangle` class?  
+<div class="fragment">ANSWER: The field `sides` is set to `private` in the `Shape` class.</div>
+<div class="fragment">QUESTION: What access modifier can be used so the field sides can be accessed by a child class?</div>
 
 
+## PRACTICE!!
+
+In Visual Studio, open a new project and create a base class and 2 classes that are derived from that base class.
+<div class="fragment">Add four fields to your base class.</div>
+<div class="fragment">Add two Properties to your class.</div>
+<div class="fragment">Add a constructor to your derived class that includes a call to your base class.</div>
+<div class="fragment">Add two methods to your derived classes.</div>
+<div class="fragment">Add a method to your base class and use it in both of your derived classes.</div>
+
+
+
+## “virtual” keyword
+
+```csharp
+public virtual void Clean()
+{
+	// body of the method
+}
+```
+In order to give the derived classes permission to create their own version of a method, the keyword `virtual` must be included in the method declaration in the base class.
+
+## Example
+
+```csharp
+class Appliances
+{
+	public virtual void Clean()
+	{
+		// general cleaning instructions
+	}
 }
 
 ```
 
-## Adding a constructor
-
-Next let's add a constructor and a field. The constructor we added is called a default constructor, i.e. it takes no arguments.
+## “override” keyword
 
 ```csharp
-class Cat
+public override void Clean()
 {
-    private string name;
-
-    public Cat()
-    {
-
-    }
-}
-
-```
-
-## Completing our class
-
-We have no way set the name to our cat. Let's complete our class and talk about it.
-
-!SLIDE
-
-```csharp
-class Cat
-{
-    private string name;
-    private int age;
-    private string furColor;
-    private isHungry = true;
-
-
-    public string Name
-    {
-        get {return this.name;}
-        set {this.name = value;}
-    }
-
-    public Cat()
-    {
-
-    }
-
-    public Cat(string name, int age, string furColor)
-    {
-        this.name = name;
-        this.age = age;
-        this.furColor = furColor
-
-    }
-```
-
-## Below our Constructors, we'll include a method
-
-```csharp
-    public void Eat()
-    {
-        if(isHungry)
-        {
-            isHungry = false;
-        }
-
-        Console.WriteLine("Is the cat hungry? " + isHungry );
-    }
+	// body of the method
 }
 ```
+When implementing a new version of the method in the derived class, add the keyword override. 
+
 ## Breaking down each part of our class
 
 - In the class we defined a number of fields at the top. These are where we store all the information that belongs to each instance(our object) of our class. 

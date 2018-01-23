@@ -240,15 +240,73 @@ internal - can only be accessed from the same assembly (default for classes) →
         
         <section>
           <!-- _S9SLIDE_ -->
-<h2 id="building-classes">Building classes</h2>
+<h2 id="access-modifiers-example">Access Modifiers Example</h2>
 
-<p>All classes start out with the keyword <code>class</code> followed by the name of the class. We can choose any name we like as long as it hasn’t been used already.</p>
-
-<p>Here we are defining a <code>class Cat</code>. It doesn’t contain anything yet.</p>
-<pre><code class="language-csharp">class Cat
+<pre><code class="language-csharp">public class Rectangle : Shape
 {
+    private double area;
+ 
+    public Rectangle(int sides, double area)
+    {
+        this.Sides = sides;
+        this.area = area;
+    }
+ 
+    public double Area
+    {
+        get { return this.area; }
+        set { this.area = value; }
+    }
+}
+</code></pre>
+<p>QUESTION: Why do we have to use the property <code>Sides</code> in the <code>Rectangle</code> class?</p>
+<div class="fragment">ANSWER: The field `sides` is set to `private` in the `Shape` class.</div>
+<div class="fragment">QUESTION: What access modifier can be used so the field sides can be accessed by a child class?</div>
 
 
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
+<h2 id="practice">PRACTICE!!</h2>
+
+<p>In Visual Studio, open a new project and create a base class and 2 classes that are derived from that base class.</p>
+<div class="fragment">Add four fields to your base class.</div>
+<div class="fragment">Add two Properties to your class.</div>
+<div class="fragment">Add a constructor to your derived class that includes a call to your base class.</div>
+<div class="fragment">Add two methods to your derived classes.</div>
+<div class="fragment">Add a method to your base class and use it in both of your derived classes.</div>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
+<h2 id="virtual-keyword">“virtual” keyword</h2>
+
+<pre><code class="language-csharp">public virtual void Clean()
+{
+	// body of the method
+}
+</code></pre>
+<p>In order to give the derived classes permission to create their own version of a method, the keyword <code>virtual</code> must be included in the method declaration in the base class.</p>
+
+
+
+        </section>
+        
+        <section>
+          <!-- _S9SLIDE_ -->
+<h2 id="example">Example</h2>
+
+<pre><code class="language-csharp">class Appliances
+{
+	public virtual void Clean()
+	{
+		// general cleaning instructions
+	}
 }
 
 </code></pre>
@@ -259,85 +317,15 @@ internal - can only be accessed from the same assembly (default for classes) →
         
         <section>
           <!-- _S9SLIDE_ -->
-<h2 id="adding-a-constructor">Adding a constructor</h2>
+<h2 id="override-keyword">“override” keyword</h2>
 
-<p>Next let’s add a constructor and a field. The constructor we added is called a default constructor, i.e. it takes no arguments.</p>
-
-<pre><code class="language-csharp">class Cat
+<pre><code class="language-csharp">public override void Clean()
 {
-    private string name;
-
-    public Cat()
-    {
-
-    }
-}
-
-</code></pre>
-
-
-
-        </section>
-        
-        <section>
-          <!-- _S9SLIDE_ -->
-<h2 id="completing-our-class">Completing our class</h2>
-
-<p>We have no way set the name to our cat. Let’s complete our class and talk about it.</p>
-
-
-        </section>
-        
-        <section>
-          <!-- _S9SLIDE_  -->
-
-<pre><code class="language-csharp">class Cat
-{
-    private string name;
-    private int age;
-    private string furColor;
-    private isHungry = true;
-
-
-    public string Name
-    {
-        get {return this.name;}
-        set {this.name = value;}
-    }
-
-    public Cat()
-    {
-
-    }
-
-    public Cat(string name, int age, string furColor)
-    {
-        this.name = name;
-        this.age = age;
-        this.furColor = furColor
-
-    }
-</code></pre>
-
-
-
-        </section>
-        
-        <section>
-          <!-- _S9SLIDE_ -->
-<h2 id="below-our-constructors-well-include-a-method">Below our Constructors, we’ll include a method</h2>
-
-<pre><code class="language-csharp">    public void Eat()
-    {
-        if(isHungry)
-        {
-            isHungry = false;
-        }
-
-        Console.WriteLine("Is the cat hungry? " + isHungry );
-    }
+	// body of the method
 }
 </code></pre>
+<p>When implementing a new version of the method in the derived class, add the keyword override.</p>
+
 
 
         </section>
