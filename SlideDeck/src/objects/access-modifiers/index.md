@@ -1,5 +1,5 @@
-title: Introduction to Object Oriented Programming
-subtitle: The Fundamentals of OOP
+title: Access Modifiers
+subtitle: Now you see me, now you don't
 theme: league
 
 ## Goals
