@@ -1,5 +1,5 @@
 # Lucky Numbers
-## Due: Monday, July 10, 2017 By 9:30 AM
+## Due: Monday, January 29, 2018 By 9:30 AM
 ### - [GitHub Submission Link](https://docs.google.com/forms/d/e/1FAIpQLScUEvl_ZgH_OgBu0zbg_WIvB6zBSkkXh7wfxqjv4LwLdBDxLg/viewform)
   - Correct GitHub link must be submitted on time, or the project will be considered late/not submitted.
   - GitHub repository must be created from correct folder and contain solution file, or the project will be considered late/not submitted.

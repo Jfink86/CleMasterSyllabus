@@ -6,7 +6,7 @@ theme: league
 
 - So far we have learned a very linear approach to programming.
 
-- If we review our Hello World, its important to note the compiler reads each line of code from top to bottom until it executes the last line.
+- If we review our Hello World, it's important to note the compiler reads each line of code from top to bottom until it executes the last line.
 
 - Likewise, all of our code resides in the <mark>main</mark>method.
 
@@ -29,7 +29,7 @@ Question time: What are some methods we have already encountered?
 </div>
 
 <div class="fragment">
-- Do you remember the term <mark>abstraction</mark> we referenced in a prior lecture? Mountian Dew ingredients?
+- Do you remember the term <mark>abstraction</mark> we referenced in a prior lecture? Mountain Dew ingredients?
 </div>
 <div class="fragment">
 - Well methods are a form of abstraction. If we didnt have a <mark>Console.WriteLine()</mark> method, we would have to include all the code in the Console.WriteLine() method each time we wanted to print to the console.
@@ -43,7 +43,7 @@ Question time: What are some methods we have already encountered?
 
 ## Step through the structure
 
-- Lets discuss methods using an example we are already familiar with called the <mark>main</mark> method.
+- Let's discuss methods using an example we are already familiar with called the <mark>main</mark> method.
 
 <pre><code class="language-C#" data-noescape>
     class Program
@@ -59,7 +59,7 @@ Question time: What are some methods we have already encountered?
 
 - All methods must reside in a <mark>class</mark>!!
 
-- The main menu is created by default by Visual Studio when your project is created.
+- The main method is created by default by Visual Studio when your project is created.
 
 - Unlike other methods, the main method by default is the start of an application.
 
@@ -67,9 +67,9 @@ Question time: What are some methods we have already encountered?
 
 !SLIDE
 
-- A method has four characteristics: <mark>Modifiers/Access Level, Return Value, Method Name, Method parameters.
+- A method has four characteristics: <mark>Modifiers/Access Level, Return Value, Method Name, Method parameters.</mark>
 
-- Lets walk through each characteristic starting with <mark>Modifiers/Access Level</mark>
+- Let's walk through each characteristic starting with <mark>Modifiers/Access Level</mark>
 
 - Modifiers/Access levels are characteristics we use to set access to our code.
 
@@ -77,15 +77,15 @@ Question time: What are some methods we have already encountered?
 
 - We will define all these keywords, but the three you will become most familiar with are <mark>Public</mark>, <mark>Private</mark> and <mark>Static</mark>.
 
-	- <mark>Public</mark>: The type or method can be accessed by any other code in the same namespace or another namespace that references it.
+	- <mark>Public</mark>: This type of method can be accessed by any other code in the same namespace or another namespace that references it.
 
-	- <mark>Private</mark>: The type or method can be accessed only by code in the same class.
+	- <mark>Private</mark>: This type of method can be accessed only by code in the same class.
 
-	- <mark>Protected</mark>: The type or method can be accessed only by code in the same class, or in a class that is derived from that class.
+	- <mark>Protected</mark>: This type of method can be accessed only by code in the same class, or in a class that is derived from that class.
 
-	- <mark>Internal</mark>: The type or method can be accessed by any code in the same namespace, but not from another namespace.
+	- <mark>Internal</mark>: This type of method can be accessed by any code in the same namespace, but not from another namespace.
 
-	- <mark>Static</mark>: The type or method can be accessed by code in any other class in the same namespace without instantiating an instance of that class.
+	- <mark>Static</mark>: This type of method can be accessed by code in any other class in the same namespace without instantiating an instance of that class.
 
 
 ## Back to main
@@ -155,7 +155,7 @@ namespace HelloWorld
 }
 </code></pre> 
 
-- Well there is not to much to say about this characteristic.
+- Well there is not too much to say about this characteristic.
 
 - Remember to give your methods a name that describes their purpose or function.
 
@@ -180,9 +180,9 @@ namespace HelloWorld
 
 - <mark>Method parameters</mark> are used to pass data from the method call into the method.
 
-- In the case of the main method we have one declared varible which is a string array named args.
+- In the case of the main method we have one declared variable which is a string array named args.
 
-- Lets see an example of the main method operation so we can better understand.
+- Let's see an example of the main method operation so we can better understand.
 
 !SLIDE
 
@@ -234,11 +234,11 @@ Question time: How many times will our for loop execute?
 Question time: What values will be printed to the console and in what order?
 </div>
 
-## Lets experiment
+## Let's experiment
 
-- Now that we have an idea about methods and at least have some understanding of their operation, lets do some coding.
+- Now that we have an idea about methods and at least have some understanding of their operation, let's do some coding.
 
-- Lets use our Hello World program and create a few methods.
+- Let's use our Hello World program and create a few methods.
 
 - Open your Hello World program, and comment out the code in part fourteen.
 
@@ -303,19 +303,19 @@ class Program
 }
 </code></pre>
 
-## Lets dig deeper
+## Let's dig deeper
 
-- Now lets walk through the process step by step.
+- Now let's walk through the process step by step.
 
 	1. We assigned the bool variable <mark>isGodLike</mark> the return value of the <mark>IsGodLike</mark> method call.
 
 	2. We passed the value from the int variable <mark>ageOne</mark> into the <mark>IsGodLike</mark> method call.
 
-	3. When the complier executes the new value assignment of the bool <mark>IsGodLike</mark>, it executes the<mark>IsGodLike</mark> method call.
+	3. When the compiler executes the new value assignment of the bool <mark>IsGodLike</mark>, it executes the<mark>IsGodLike</mark> method call.
 	
-	4. The compliler exits the main method, and executes the <mark>IsGodLike</mark> method.
+	4. The compiler exits the main method, and executes the <mark>IsGodLike</mark> method.
 	
-	5. The value of the int variable <mark>ageOne</mark> is passed to the <mark>IsGodLike</mark> method paramenter <mark>age</mark>.
+	5. The value of the int variable <mark>ageOne</mark> is passed to the <mark>IsGodLike</mark> method parameter <mark>age</mark>.
 
 	6. The value of age is passed to the conditional statement in the <mark>if</mark> statement, and the logic is processed.
 
@@ -337,11 +337,11 @@ class Program
 
 - We took our time and I walked you step by step through the bool method.
 
-- Now lets create the string method and you will walk us through the process.
+- Now let's create the string method and you will walk us through the process.
 
 - Add the following code to your Hello World program, then execute your code.
 
-- Lets get two volunteers to come up and walk us through the methods process
+- Let's get two volunteers to come up and walk us through the methods process
 
 <pre><code class="language-C#" data-noescape>
 class Program
@@ -367,7 +367,7 @@ class Program
 
 - Add the following code to your Hello World program, then execute your code.
 
-- Lets get two volunteers to come up and walk us through the methods process
+- Let's get two volunteers to come up and walk us through the methods process
 
 <pre><code class="language-C#" data-noescape>
 class Program
@@ -391,7 +391,7 @@ class Program
 
 ## Results
 
-- Here are the results of both methods. Did you get the same results? If not Why?
+- Here are the results of both methods. Did you get the same results? If not, why?
 
 - String Method
 <div float="right" class="img"><img src="./resources/methods8.png" /></div>
@@ -400,15 +400,15 @@ class Program
 
 <div float="right" class="img"><img src="./resources/methods7.png" /></div>
 
-## Ok lets breath
+## Ok let's breathe
 
 - We have covered in detail the parts, characteristics, and process of C# methods.
 
-- I would like to say this is all you will need to know about methods, but we know that wouldnt be true.
+- I would like to say this is all you will need to know about methods, but we know that wouldn't be true.
 
 - When you learn about OOP, you will learn about virtual, abstract and override methods to name a few.
 
-- You also will learn how important access levels are in mulitple class programs.
+- You also will learn how important access levels are in multiple class programs.
 
 - As always the best way to learn about methods is to code code code.
 <style type="text/css">
