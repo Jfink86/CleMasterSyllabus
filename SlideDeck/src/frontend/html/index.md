@@ -12,17 +12,21 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
 - Lets put what we learned to the test. I need a volunteer!!
 
-    <div float="right"><img src="./resources/boot1.png" /></div>
+    <div float="right" class="img"><img src="./resources/boot1.png" /></div>
 
 	- Open Visual Studio
 
-	- Select File > New > WebSite
+	- Select File > New > Project
 
 !SLIDE
 
-   <div float="right"><img src="./resources/boot2.png" /></div>
+   <div float="right" class="img"><img src="./resources/boot2.png" /></div>
 
-- Ensure <mark>Visual C#</mark> is selected under templates.
+- Select <mark>Installed</mark>.
+
+- Select <mark>Web</mark>.
+
+- Select <mark>Web Site</mark>
 
 - Ensure <mark>ASP.NET Empty Web Site</mark> is highlighted.
 
@@ -30,25 +34,23 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
 - Use your right arrow key to navigate to the end of the location path.
 
-- Change <mark>WebSite1</mark> to <mark>Bootstrap</mark>. 
+- Change <mark>WebSite1</mark> to <mark>MySuperDopeWebSite</mark>. 
 
-- Your location address might have a value differant than <mark>WebSite1</mark>, not to worry just replace whatever value is there to <mark>Bootstrap</mark>
+- Your location address might have a value differant than <mark>WebSite1</mark>, not to worry just replace whatever value is there to <mark>MySuperDopeWebSite</mark>
 
 - Finally Select <mark>Ok</mark>.
 
-## We should all be here!!
-
-   <div float="right"><img src="./resources/boot3.png" /></div>
-
 ## Lets add an HTML page
 
-   <div float="right"><img src="./resources/boot4.png" /></div>
+   <div float="right" class="img"><img src="./resources/boot3.png" /></div>
 
-- Select Website > Add New Item
+   - Place your curser in the Solution Explorer and right click on <mark>SuperDopeWebSite</mark>
+
+   - Select <mark>Add</mark> then <mark>Add New Item</mark>.
 
 !SLIDE
 
-   <div float="right"><img src="./resources/boot5.png" /></div>
+   <div float="right" class="img"><img src="./resources/boot4.png" /></div>
 
 - Ensure <mark>Visual C#</mark> is selected under templates.
 
@@ -60,7 +62,7 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
 ## We should all be here!!
 
-   <div float="right"><img src="./resources/boot6.png" /></div>   
+   <div float="right" class="img"><img src="./resources/boot5.png" /></div>
 
 ## Its all about the Tags
 
@@ -321,3 +323,9 @@ or:
 ## Now you do it
 
 Navigate to [the exercise](https://github.com/donhamiltoniii/semantic-markup) on Github and follow the instructions in the repository to complete the project.
+<style type="text/css">
+.img:hover  {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+</style>
