@@ -4,19 +4,19 @@ So, you have some experience under your belt in the care and feeding of a virtua
 
 ## Setup
 
-- [ ] Create a Java project in Eclipse named `virtual-pet-shelter`.
+- [ ] Create a C# project in Visual Studio named `VirtualPetShelter`.
 - [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
-- [ ] Create a GitHub repository also named `virtual-pet-shelter` and set it up so that you can push your code there from your Eclipse project. Do this *now*. It's the least fun part, so just get it out of the way.
+- [ ] Create a GitHub repository also named `VirtualPetShelter` and set it up so that you can push your code there from your Visual Studio project. Do this *now*. It's the least fun part, so just get it out of the way.
 - Create the following classes:
 	- [ ] `VirtualPet`: You can start with your class from last week's assignment or create another.
 	- [ ] `VirtualPetShelter`: Homeless virtual pets need a place to stay.
-	- [ ] `VirtualPetShelterApp`: This class will house your `main` method, and be responsible for reading user input and writing output to the console.
+- Your Program class will house your `main` method, and be responsible for reading user input and writing output to the console.
 
 ## Details
 
 We're going to create an application that simulates you taking care of the pets in a shelter.
 
-Include a game loop in this project, too. It should query the user, then call the appropriate method(s) on `VirtualPetShelter` and/or `VirtualPet`.
+Include a game loop in this project, too. It should prompt the user, then call the appropriate method(s) on `VirtualPetShelter` and/or `VirtualPet`.
 
 ### Example Interactions
 
@@ -60,9 +60,9 @@ Ok, you play with Tommy.
 
 ## Required Tasks
 
-### VirtualPetShelterApp class
+### Program class
 
-- Create a `main` method that…
+- In the `main` method have a program that…
 	- [ ] implements a *game loop*.
 	- [ ] asks for user input.
 	- [ ] writes output to the console.
@@ -75,13 +75,12 @@ Ok, you play with Tommy.
 	- [ ] allow adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
 	- [ ] allow intake of a pet, prompting the user for the pet's information, requiring the user to (at minimum) specify name and description
 
-	(*Hint: you can use tab characters ("\t") to align console output in columns.*)
 
 ### VirtualPetShelter class
 
 - [ ] include appropriate instance variable(s) to store the pets who reside at the shelter
 - [ ] include methods that:
-	- [ ] return a `Collection` of all of the pets in the shelter
+	- [ ] return a `List` of all of the pets in the shelter
 	- [ ] return a specific `VirtualPet` given its name
 	- [ ] allow intake of a homeless pet
 	- [ ] allow adoption of a homeless pet
@@ -92,15 +91,14 @@ Ok, you play with Tommy.
 
 ### VirtualPet class
 	
-In addition to the requirements from [last week's project](../virtual-pet):
-- include instance variables representing:
+In addition to the requirements from last week's project,
+- include instance variables (fields/Properties) representing:
 	- [ ] name
 	- [ ] description
 - include a constructor that accepts a name and description only
 - include a constructor that, in addition to name and description, accepts starting values for the pet's attributes (hunger, boredom, etc)
 
-Do **not** include a default (zero arguments) constructor.
-You will find that it is OK to have more than one constructor. This will be called an **overloaded** constructor
+Remember that it is OK to have more than one constructor. This will be called an **overloaded** constructor
 
 ## Stretch Tasks
 
