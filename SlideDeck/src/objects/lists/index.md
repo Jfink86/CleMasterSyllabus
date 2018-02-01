@@ -42,7 +42,7 @@ Create a new Console Application with the title "ToyStore"
 
 This is how we'd set up an array of toys at our toy store. Remember, arrays have a fixed size.
 
-<div float="right"><img src="./resources/toyarray.jpg" /></div>
+<div float="right"><img src="./resources/toyarray.JPG" /></div>
 
 ## How To Initialize a List
 
@@ -50,7 +50,7 @@ A list is created with the <mark>new</mark> keyword, which we will see a lot mor
 
 Create the following list.
 
-<div float="right"><img src="./resources/toylist.jpg" /></div>
+<div float="right"><img src="./resources/toylist.JPG" /></div>
 
 Notice the similarities and differences between creating a new List versus creating an array.
 
@@ -58,7 +58,7 @@ Notice the similarities and differences between creating a new List versus creat
 
 Unlike arrays, with lists we don't have to set a size when we create an empty list.
 
-<div float="right"><img src="./resources/newEmptyList.jpg" /></div>
+<div float="right"><img src="./resources/newEmptyList.JPG" /></div>
 
 ## Mutable
 
@@ -66,7 +66,7 @@ Unlike an array, a List is mutable, meaning that it does not have a fixed size a
 
 We can use the <mark>.Add()</mark> method to add elements to our list.
 
-<div float="right"><img src="./resources/addToToyList.jpg" /></div>
+<div float="right"><img src="./resources/addToToyList.JPG" /></div>
 
 <div class="fragment">
 What did our `foreach` loop do?
@@ -76,7 +76,7 @@ What did our `foreach` loop do?
 
 We saw what the `foreach` loop did in our previous slide. There is another way to print elements in a list using their indices.
 
-<div float="right"><img src="./resources/PrintAtIndex.jpg" /></div>
+<div float="right"><img src="./resources/PrintAtIndex.JPG" /></div>
 
 ## Objects and Methods
 
@@ -94,13 +94,13 @@ The .Count property is the List-version of the .Length property that is built in
 
 Write out the following code and share what you discover about .Remove().
 
-<div float="right"><img src="./resources/CountAndRemove.jpg" /></div>
+<div float="right"><img src="./resources/CountAndRemove.JPG" /></div>
 
 ## Insert
 
 The .Insert() method allows us to put a new element in our list AND specify which index we want that element to go to. Take a look at the following code.
 
-<div float="right"><img src="./resources/InsertMethod.jpg" /></div>
+<div float="right"><img src="./resources/InsertMethod.JPG" /></div>
 
 <div class="fragment">
 What index is each element at?
@@ -115,7 +115,7 @@ Another built-in method with Lists is the .Contains() method. .Contains() checks
 
 We can use methods inside of loops and conditionals. Write out the example below:
 
-<div float="right"><img src="./resources/ConditionalAndContains.jpg" /></div>
+<div float="right"><img src="./resources/ConditionalAndContains.JPG" /></div>
 
 <div class="fragment">
 What result did you expect? What method that we've learned can we use to change the result?
@@ -125,7 +125,7 @@ What result did you expect? What method that we've learned can we use to change 
 
 Just like an array, we can iterate through a list. Write out the following code:
 
-<div float="right"><img src="./resources/LoopAndConditionalWithList.jpg" /></div>
+<div float="right"><img src="./resources/LoopAndConditionalWithList.JPG" /></div>
 
 <div class="fragment">
 What is the logic behind this code?
