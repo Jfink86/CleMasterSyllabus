@@ -174,30 +174,339 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
 # Box Model
 
+## Lets Build Our Super Dope Web Site
+
+- Copy and paster the following in between the  <mark>body</mark> tags of your <mark>index.html</mark> page.
+
+```C#
+My Super Dope Web Page Hi, this is my super awesome fun web page where the content makes no sense but there is a lot of it. 
+So let's get into some business that you can learn from. This is a list of colors that are colorful in no particular order: 
+Red Teal Purple Daffodil Lime Green Magenta Atomic Tangerine This is a list of movies ranked from most-awesome to not-as-awesome 
+Anything with Bill Murray in it Life Aquatic Jurassic World Blade II The Matrix Sequels Let's look at some images: Cats Are Awesome! 
+Look at this one: Doggos Are Pretty Cool Too This doggo is a tricky doggo: Sometimes people say important things You need to document 
+important things that people say so you can sound smart when it's necessary. Success is a lousy teacher. It seduces smart people into 
+thinking they can't lose. - Bill Gates When it comes to HTML, there are some things you just shouldn't do At least, not anymore... 
+Want bold text? There's a wrong way and a right way. Always use the right way! Maybe you need some italics? Again, it used to be done 
+like this. This is wrong. This is the right way. Separation of concerns The wrong way tags above are deprecated and should not be used. 
+HTML should be used to mark-up or organize your content. It should not be used to style your content or interact with it. Those are 
+the jobs of CSS and JavaScript! Links Links are one of the most important parts of the web. They help you navigate from place to place 
+on the internet. Sections Section elements are good for grouping elements that belong together. You can also use div's for this
+
+```
+
 ## Elements in HTML
 
 - HTML tags and the content they house are called elements. 
 
-- Lets add a couple of <mark>elements</mark> to our page.
+- Lets add some HTML <mark>elements</mark> to our page.
 
-- `<h1>W3Schools</h1>`
+- Lets start with the <mark>h1</mark> tag. This is a <mark>header</mark> tag.
 
-- `<p>W3Schools is an excellent resources for questions about anything html</p>`
+- Go ahead and type these header in between the <mark>body</mark> tags in your index.html page.
 
-- `<a href="https://www.w3schools.com">Visit W3Schools.com!</a>`
+- You will see the <mark>number 1</mark>. This signifies the size of the header
 
-These elements can be thought of as boxes. We will often house elements inside of each other. This can be for organization or just as a method of containing elements.
+- `<h1>My Super Dope Web Page</h1>`
+- `<h2>My Super Dope Web Page</h2>`
+- `<h3>My Super Dope Web Page</h3>`
 
-## More boxes
+- Lets publish our web page by selecting <mark>Google Chrome</mark> on the Visual Studio standard tool bar.
 
-Each HTML element in the body has a structure that looks like this:
+- Your Chrome browser will open, and your index page will be displayed.
+
+## We should all be here
+
+   <div float="right" class="img"><img src="./resources/boot6.png" /></div>
+
+   - Question time: What do you notice about the size of the font in relation to the header tags?
+
+## Paragraph tags
+
+- Next is the <mark>p</mark> tag.
+
+- These are <mark>paragraph</mark> tags.
+
+- Go ahead and type these paragraphs after you last header tag in your index.html page.
+
+- `<p>Hi, this is my super awesome fun web page where the content makes no sense but there is a lot of it.</p>`
+- `<p>So let's get into some business that you can learn from.</p>`
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+## We should all be here
+
+   <div float="right" class="img"><img src="./resources/boot7.png" /></div>
+
+   - Question time: Is there a differance between the line spacing between our paragraphs on our browser and our Visual Studio page?
+
+## Ordered and unordered lists
+
+- Next are the unordered list <mark>ul</mark>, ordered list <mark>ol</mark> and list <mark>li</mark>tags.
+
+- Go ahead and type these lists after your last paragraph tag in your index.html page. Select <mark> CTL Shift f5</mark> to restart your browser.
+
+```HTML
+<ul>
+	<li>Red</li>
+	<li>Teal</li>
+	<li>Purple</li>
+	<li>Daffodile</li>
+</ul>
+```
+```HTML
+<ol>
+	<li>Red</li>
+	<li>Teal</li>
+	<li>Purple</li>
+	<li>Daffodile</li>
+</ol>
+```
+```HTML
+<ol start = "50">
+	<li>Red</li>
+	<li>Teal</li>
+	<li>Purple</li>
+	<li>Daffodile</li>
+</ol>
+```
+## We should all be here
+
+   <div float="right" class="img"><img src="./resources/boot8.png" /></div>
+
+   - Question time: What is the differance between an ordered and unordered list?
+
+   - Question time: What does the <mark>start</mark> attribute do in the second ordered list?
+
+## Sections
+
+- Next is the <mark>section</mark>tag.
+
+- Go ahead and type these lists after your last orderlist tag in your index.html page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+```HTML
+<section>
+	<h1>Section One</h1>
+	<ul>
+		<li>Red</li>
+		<li>Teal</li>
+		<li>Purple</li>
+		<li>Daffodile</li>
+	</ul>
+</section>
+```
+```HTML
+<section>
+	<h1>Section Two</h1>
+	<ol>
+		<li>Red</li>
+		<li>Teal</li>
+		<li>Purple</li>
+		<li>Daffodile</li>
+	</ol>
+</section>
+```
+## We should all be here
+
+   <div float="right" class="img"><img src="./resources/boot9.png" /></div>
+
+   - We can use section to divide our elements, and provide a mechanism to make changes to individual sections.
+
+   
+## HyperLinks
+
+- Next is the <mark>a</mark>tag or hyperlink tag.
+
+- Go ahead and type these lists with hyperlinks after your last section tag in your index.html page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+```HTML
+<section>
+	<h1>Section Three</h1>
+	<ul>
+		<li><a href="http://www.google.com">Google</a></li>
+		<li><a href="http://www.yahoo.com">Yahoo</a></li>
+	</ul>
+</section>
+```
+```HTML
+<section>
+	<h1>Section Four</h1>
+	<a href="http://www.google.com">Google</a>
+	<a href="http://www.yahoo.com">Yahoo</a>
+</section>
+```
+## We should all be here
+
+   <div float="right" class="img"><img src="./resources/boot10.png" /></div>
+
+   - Notice the hyperlink is located within the opening <mark>a</mark> tag, and the name of the link is in between the <mark>a</mark> tags.
+
+   - Question time: Could I have assigned any name we wanted to each hyperlink?
+   
+## Images
+
+- Next is the <mark>img</mark> tag.
+
+- Go ahead and type these lists with hyperlinks after your last section tag containing the two hyperlinks in your index.html page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+```HTML
+<section>
+	<h1>Section Five</h1>
+	<ul>
+		<li><img src = "https://www.hdforums.com/forum/attachments/softail-models/532158d1501463768-carlini-apes-gangster-or-flying-let-s-see-them-5e943084-4634-4a50-8a68-4e35e7001b79-67530-0000035f738a9567.jpg"><img></li>
+	</ul>
+</section>
+```
+```HTML
+<section>
+	<h1>Section Six</h1>
+	<img src = "https://i.ytimg.com/vi/sGGb2qnIcrQ/maxresdefault.jpg"><img>
+</section>
+```
+## Ttiles
+
+- Next is the <mark>title</mark> tag.
+
+- Go ahead and type this line of code in between the <mark>head</mark> tag in your index.html page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+```HTML
+<title>SuperDope</mark>
+```
+- Question time: What changes on our web page?
+
+## Element Attributes
+
+- There are attributes that you can include on your elements that will affect the way they behave. Some attributes are required to make an element function. These include:
+
+- href (hypertext reference) - Used to give anchor tags a location to link to
+- type - Used usually on input elements to describe what type of input they should accept
+- src (source) - Used in script tags and img tags. These house the location of the resource
+
+# DIV and SPAN tags
+
+## Divs
+
+- Div tags are a useful tool in HTML. A `<div></div>` tag is a generic block level element. 
+
+- They are used mostly for organizational purposes in HTML code. 
+
+- If you have a block of information that exists as a group, you may choose to group it in a div to keep it organized and identify it as one unit:
+
+- Go ahead and type the following code after your last section tag containing the last image in your index.html page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+- Question time: What does this remind you of in our earlier code?
+
+```html
+<div>
+    <h2>Wonder Women</h2>
+    <h3>Super Hero</h3>
+    <p>10/13/2017</p>
+</div>
+```
+
+## Spans
+
+- Similar to divs, spans are a generic element in html as well. 
+
+- The difference being that they are generic inline level elements. 
+
+- Span tags are used mostly to add emphasis or apply specific CSS styles.
+
+- These can be used for highlighting individual text in a paragraph or list item.
+
+- Go ahead and type the following code after your last div tag in your index.html page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser.
+
+```html
+<p>I enjoy driving my <span style = "color:red;font-weight:bold" >Ford Bronco</span> but I really enjoy riding my <span style = "color:black;font-weight:bold; font-style:italic" >Road King</span>.</p>
+```
+
+# IDs and Classes
+
+## IDs
+
+- IDs in HTML are used as unique identifiers for your individual elements. 
+
+- You can apply an ID to specific elements but, no two elements should have the same identifier. 
+
+- You can think of them as similar to the key value in a Dictionary.
+
+- ID's are identified by a <mark>#</mark> in front of the element identifier.
+
+- Lets go back to our first <mark>h1</mark> element, and add the following
+
+```html
+<h1 id="page-title">My Super Dope Web Page</h1>
+```
+!SLIDE
+
+- Go ahead and type the following code after your last p tag in your index.html page.
+
+```html
+<a href="#page-title">Go back to where 'My Super Dope Web Page' is located on the page.</a>
+```
+- You will notice the <mark>href</mark> attribute is referencing the <mark>page-title id</mark>. You know its an id because of the <mark>#</mark> in front of the id.
+
+- You will find id's helpful when selecting specific elements in CSS and JS. 
+
+- You can also use them for their specific location in a page. 
+
+- For example, if you give an anchor tag an existing ID as a value, when you click the link, it will take you to the location of the element with that ID on the page.
+
+- Select <mark> CTL Shift f5</mark> to restart your browser and click on the link at the bottom of your index.html page.
+
+## Classes
+
+- Classes in HTML are similar to IDs. 
+
+- They identify an element in your code. 
+
+- The difference between IDs and classes is that classes are not unique. 
+
+- You may give multiple elements the same class and you can give one element multiple classes. 
+
+- Make the following changes to your div and span elements
+
+- Unlike id's which are referenced by <mark>#</mark>, classes are referenced by <mark>.</mark> or a period before the class name.'
+
+```HTML
+<div class="superhero">
+        <h2>Wonder Women</h2>
+        <h3>Super Hero</h3>
+        <p>10/13/2017</p>
+</div>
+```
+```HTML
+<p class="superhero">I enjoy driving my <span style="color:red;font-weight:bold">Ford Bronco</span> but I really enjoy riding my <span style="color:black;font-weight:bold; font-style:italic">Road King</span>.</p>
+````
+- The benefits of using classes and id's will be clearer when we get into CSS and Javascript.
+
+
+## Boxes
+
+- Each HTML element in the body has a structure that looks like this:
 
 ![box model image](./resources/boxmodel-image.png)
 
 - At the center is the content inside of your element. (i.e. `<p>This is the content</p>`).
+
 - Just outside of that we have the padding. Padding adds space between your content and the inside of your element.
+
 - The next layer is the border. The border outlines your element. Borders don't have a value by default.
+
 - The final layer is the margin. The margin is similar to padding but this creates space outside of your element.
+
+- Goto your browser and select the <mark>f12</mark>. Lets practice accessing the box.Visual Studio.
 
 # Display Values
 
@@ -209,120 +518,6 @@ Block level elements can be thought of like building blocks. These elements will
 
 Inline elements will only take up as much space as their content requires. Think paragraphs, anchors, or spans.
 
-## Common Tags
-
-Common tags you'll use in HTML5:
-
-| Tag                     | Use                                                          |
-| ----------------------- | ------------------------------------------------------------ |
-| `<h1>, <h2>, <h3> ...`  | For headings                                                 |
-| `<p>`                   | For blocks of text                                           |
-| `<ul>, <ol>`            | Used to make lists                                           |
-| `<section>`             | Used to organize related elements                            |
-| `<article>`             | Similar to section. Usually specifically for actual articles |
-| `<a>`                   | Used to make links                                           |
-| `<img>`                 | Used to include images in your code                          |
-| `<title>`               | Used to declare the title of your page                       |
-
-## Deprecated Tags
-
-Tags you may encounter but shouldn't use anymore due to separation of concerns:
-
-| Tag         | Use                                            |
-| ----------- | ---------------------------------------------- |
-| `<b>`       | Used to make things bold                       |
-| `<i>`       | Used to make things italic                     |
-| `<center>`  | Used to center elements                        |
-| `<font>`    | Used to change the font of a group of elements |
-
-## Element Attributes
-
-There are attributes that you can include on your elements that will affect the way they behave. Some attributes are required to make an element function. These include:
-
-- href (hypertext reference) - Used to give anchor tags a location to link to
-- type - Used usually on input elements to describe what type of input they should accept
-- src (source) - Used in script tags and img tags. These house the location of the resource
-
-## Custom Attributes
-
-In HTML5, we have the ability to create custom attributes. These can be very useful for identifying items and selecting them.
-
-Custom attributes need to be prefixed with 'data' in order to be recognized properly.
-
-i.e. To add a key attribute to an element:
-```html
-    <ul>
-        <li data-key="item1">Item 1</li>
-        <li data-key="item2">Item 2</li>
-        <li data-key="item3">Item 3</li>
-    </ul>
-```
-
-This is very common in new JavaScript frameworks.
-
-# DIV and SPAN tags
-
-## Divs
-
-Div tags are a useful tool in HTML. A `<div></div>` tag is a generic block level element. They are used mostly for organizational purposes in HTML code. If you have a block of information that exists as a group, you may choose to group it in a div to keep it organized and identify it as one unit:
-
-```html
-<div class="my-info"><!-- more on classes shortly -->
-    <h2>My Name</h2>
-    <h3>My Title</h3>
-    <p>10/13/2017</p>
-</div>
-```
-
-## Spans
-
-Similar to divs, spans are a generic element in html as well. The difference being that they are generic inline level elements. These can be used for highlighting individual text in a paragraph or list item:
-
-```html
-<p>""You miss <span>100 percent</span> of the shots you never take."
-— Wayne Gretzky" - Michael Scott</p>
-```
-
-Span tags are used mostly to add emphasis or apply specific CSS styles.
-
-# IDs and Classes
-
-## IDs
-
-IDs in HTML are used as unique identifiers for your elements. You can apply them to specific elements but, no two elements should have the same identifier. You can think of them as similar to the key value in a map.
-
-```html
-<h1 id="page-title">My Title</h1>
-```
-
-This is helpful when selecting specific elements in CSS and JS. You can also use them for their specific location in a page. For example, if you give an anchor tag an existing ID as a value, when you click the link, it will take you to the location of the element with that ID on the page.
-
-```html
-<a href="#page-title">Go back to where 'My Title' is located on the page.</a>
-```
-
-This can be useful for saving scrolling on mobile devices.
-
-## Classes
-
-Classes in HTML are similar to IDs. They identify an element in your code. The difference between IDs and classes is that classes are not unique. You may give multiple elements the same class and you can give one element multiple classes. For example:
-
-```html
-<p class="blue-text yellow-background medium-font-size red-border">My super long paragraph</p>
-```
-
-or:
-
-```html
-<li class="item item-1">Apple</li>
-<li class="item item-2">Orange</li>
-<li class="item item-3">Banana</li>
-<li class="item item-4">Spaghetti</li>
-```
-
-## Now you do it
-
-Navigate to [the exercise](https://github.com/donhamiltoniii/semantic-markup) on Github and follow the instructions in the repository to complete the project.
 <style type="text/css">
 .img:hover  {
         transform: scale(1.5);
