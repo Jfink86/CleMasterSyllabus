@@ -4,21 +4,29 @@ theme: league
 
 ## CSS Layouts
 
-CSS Layouts before Grid and Flexbox were, in all honesty, a nightmare. That's because until recently, CSS wasn't really equipped to handle content layout.
+- CSS Layouts before Grid and Flexbox were, in all honesty, a nightmare. 
 
-We had to use all manners of tricks, overrides, or just flat-out violation of separation of concerns to get our web pages laid out properly. This included having to include `<div>` tags in our code that were unnecessary and using percentage based measurements to make columns. (Queue mad scientist laughter)
+- That's because until recently, CSS wasn't really equipped to handle content layout.
 
-No longer my friends!
+- We had to use all manners of tricks, overrides, or just flat-out violation of separation of concerns to get our web pages laid out properly. 
+
+- This included having to include `<div>` tags in our code that were unnecessary and using percentage based measurements to make columns. (Queue mad scientist laughter)
+
+- No longer my friends!
 
 ## CSS Grid vs. Flexbox
 
-So there are two new layout tools available to us is CSS. We use CSS Grid for two-dimensional page design. Flexbox is used for one-dimensional placement of objects inside of individual containers.
+- So there are two new layout tools available to us is CSS. 
 
-We are going to go through Grid now.
+- We use CSS Grid for two-dimensional page design. 
+
+- Flexbox is used for one-dimensional placement of objects inside of individual containers.
+
+- We are going to go through Grid now.
 
 ## Grid
 
-The first thing you need to start using grid is a grid container. We accomplish that with `display: grid;` on the containing element:
+- The first thing you need to start using grid is a grid container. We accomplish that with `display: grid;` on the containing element:
 
 ```html
 <!-- index.html -->
