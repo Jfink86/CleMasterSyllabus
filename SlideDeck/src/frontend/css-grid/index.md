@@ -24,26 +24,43 @@ theme: league
 
 - We are going to go through Grid now.
 
+## Lets do some prep work
+
+- Add another HTML page to your SuperDopeWebSite.
+
+- Name your new HTML page <mark>gridEx</mark>.
+
+- Add another style sheet to your SuperDopeWebSite.
+
+- Name your new style sheet <mark>styleTwo</mark>.
+
+- Link your styleTwo file to your gridEx.html page
+
+## We should all be here
+
+- Close your index.html and your style.css pages.
+
+- You should now have two tabs open 
+
+    <div float="right" class="img"><img src="./resources/grid1.png" /></div>
+
+
 ## Grid
 
-- The first thing you need to start using grid is a grid container. We accomplish that with `display: grid;` on the containing element:
+- The first thing you need to start using grid is a grid container.
 
-```html
-<!-- index.html -->
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Grid Example</title>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <!-- All of your code goes here -->
-        </div>
-    </body>
-</html>
+- We accomplish that with `display: grid;` on the containing element
+
+- Add the following code to your gridEx.html page.
+
+```HTML
+<body>
+	<div class="container">
+		<!-- All of the code in the body goes here -->
+	</div>
+</body>
 ```
+- Add the following code to your styleTwo.css page.
 
 ```css
 /*style.css*/
@@ -51,10 +68,13 @@ theme: league
     display: grid;
 }
 ```
-
 ## Grid Items
 
-Grid items are any children of your grid container.
+- Grid items are any children of your grid container.
+
+- Add the following code to your gridEx.html page.
+
+- Select save all, then select Google Chrome.
 
 ```html
 <div class="container">
@@ -66,15 +86,27 @@ Grid items are any children of your grid container.
 </div>
 ```
 
-!SLIDE
+## What have we created
 
-This gives you a result that looks like this:
+- Select f12 to open the Chrome Developers Tools window.
 
-![Default distribution](./resources/initial-grid-setting.png)
+- Select the arrow on the top left of the Chrome Developer Tools window and hover over the top of the gridEx.html page.
+
+- You will see four distinct containers.
+
+    <div float="right" class="img"><img src="./resources/grid2.png" /></div>
 
 ## Container
 
-One of the first things to notice that needs to be handled is the way our content goes from one edge of the page to the other. There aren't a lot of websites out there that use a layout like this. So here is a common container setting that will limit the size of your content and make it look a little neater:
+- One of the first things Developers need to address is the way our content goes from one edge of the page to the other. 
+
+- There aren't a lot of websites out there that use a layout like this. 
+
+- So here is a common container setting that will limit the size of your content and make it look a little neater
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
 
 ```css
 .container {
@@ -84,15 +116,17 @@ One of the first things to notice that needs to be handled is the way our conten
 }
 ```
 
+## We should all be here
+
+- Let's step through what's happening here.
+
+    <div float="right" class="img"><img src="./resources/grid3.png" /></div>
+
 !SLIDE
 
-Let's step through what's happening here.
+- This line of code is saying that we want our container to have a width of 1000px. 
 
-![Container with constraints](./resources/container-with-contraints.png)
-
-!SLIDE
-
-This line of code is saying that we want our container to have a width of 1000px. Since our viewport is larger than 1000px, our container will be slimmer and have some space between itself and the edges of the window.
+- Since our viewport is larger than 1000px, our container will be slimmer and have some space between itself and the edges of the window.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -104,7 +138,9 @@ This line of code is saying that we want our container to have a width of 1000px
 
 !SLIDE
 
-This line of code is saying that we want to have `2rem` units of space on the top and bottom of our container. The `auto` keyword is telling our browser to take what ever space is left on the sides and distribute it evenly effectively centering our container.
+- This line of code is saying that we want to have `2rem` units of space on the top and bottom of our container. 
+
+- The `auto` keyword is telling our browser to take what ever space is left on the sides and distribute it evenly effectively centering our container.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -114,11 +150,27 @@ This line of code is saying that we want to have `2rem` units of space on the to
 }
 </code></pre>
 
-Notice the repetition? There is a short hand when both top/bottom AND right/left share the same values. This code can be re written as follows: `2rem auto`. It will be written this way in following slides. Ok, back to actual grid syntax.
+- Notice the repetition? 
+
+- There is a short hand when both top/bottom AND right/left share the same values.
+
+- Rewrite your code as follows: `2rem auto`. 
+
+- It will be written this way in following slides. Ok, back to actual grid syntax.
 
 ## Grid Columns
 
-So as you can see, grid layout on its own does nothing for your content. This is because by default your grid is set to have only one column and one row. So this essentially leaves your content looking like it's still displayed as block level elements. Let's add another column:
+- So as you can see, grid layout on its own does nothing for your content. 
+
+- This is because by default your grid is set to have only one column and one row. 
+
+- So this essentially leaves your content looking like it's still displayed as block level elements. 
+
+- Let's add another column
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
 
 ```css
 .container {
@@ -129,21 +181,38 @@ So as you can see, grid layout on its own does nothing for your content. This is
 }
 ```
 
+## We should all be here
+
+- Let's step through what's happening here.
+
+    <div float="right" class="img"><img src="./resources/grid4.png" /></div>
+
+- Now we have two columns set to 500px each effectively making a 2 column grid.
+
+- The more values you put into `grid-template-columns`, the more columns you will create.
+
+
+
 !SLIDE
 
-Now we have two columns set to 500px each effectively making a 2 column grid. The more values you put into `grid-template-columns`, the more columns you will create.
+- We can now add items to our grid and they will fall in place the same way! 
 
-![Two columns](./resources/two-column-fixed-width-grid.png)
+- Add 3 more items that look the same as the first 5 with updated numbers. Don't forget classes!
 
-!SLIDE
+    <div float="right" class="img"><img src="./resources/grid5.png" /></div>
 
-We can now add items to our grid and they will fall in place the same way! (Just add 3 more items that look the same as the first 5 with updated numbers. Don't forget classes!)
-
-![More items](./resources/two-column-fixed-width-grid-with-more-items.png)
 
 ## Grid Rows
 
-Great! Now we can make columns, and we can make as many as we want! Now what about rows? Well rows don't work very differently. Let's make 4 rows and make them grow, and then shrink in size, like this:
+- Great! Now we can make columns, and we can make as many as we want! 
+
+- Now what about rows? Well rows don't work very differently. 
+
+- Let's make 4 rows and make them grow, and then shrink in size, like this
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
 
 ```css
 .container {
@@ -155,15 +224,17 @@ Great! Now we can make columns, and we can make as many as we want! Now what abo
 }
 ```
 
+## We should all be here
+
+- Let's step through what's happening here.
+
+    <div float="right" class="img"><img src="./resources/grid6.png" /></div>
+
 !SLIDE
 
-This gives us a grid that now should look something like this:
+- Same as columns, you will have as many rows as you declare.
 
-![Two column, four row grid](./resources/modified-row-sizes.png)
-
-!SLIDE
-
-Same as columns, you will have as many rows as you declare. So, if you remove the last value, the row will take up only as much space as the content requires.
+- So, if you remove the last value, the row will take up only as much space as the content requires.
 
 ```css
 .container {
@@ -176,19 +247,29 @@ Same as columns, you will have as many rows as you declare. So, if you remove th
 ```
 This gives you:
 
-!SLIDE
+## We should all be here
 
-Three rows with declared heights and one that will auto-size based on content.
+- Let's step through what's happening here.
 
-![Missing row declaration](./resources/missing-row-declaration.png)
+    <div float="right" class="img"><img src="./resources/grid7.png" /></div>
 
-But let's put that back.
+
+- But let's put that back.
 
 ## Gutters
 
-So, last big concern with how our grid is looking. Spacebetweenthegridcells. See what I mean? Our content sort of runs together the way it is currently. So, let's look into putting some separation between all that content.
+- So, last big concern with how our grid is looking. Spacebetweenthegridcells. See what I mean?
 
-We have `grid-column-gap` and `grid-row-gap` but, as I'm sure you might guess by now, there is a way to combine the two and that's what we're going to use.
+- Our content sort of runs together the way it is currently. So, let's look into putting some separation between all that content.
+
+- We have `grid-column-gap` and `grid-row-gap`. 
+
+- I'm sure you might guess by now, there is a way to combine the two and that's what we're going to use.
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
+
 <pre><code class="language-css" data-noescape>
 .container {
     display: grid;
@@ -201,17 +282,23 @@ We have `grid-column-gap` and `grid-row-gap` but, as I'm sure you might guess by
 }
 </code></pre>
 
-!SLIDE
+## We should all be here
 
-Notice that we now have some comfortable space between all of our grid cells.
+- Let's step through what's happening here.
 
-![Grid with gutters](./resources/grid-with-gutters.png)
+- Notice that we now have some comfortable space between all of our grid cells.
 
-Uh oh. Now we have our right column overflowing out of our container! There must be some way to prevent such a catastrophe. I guess we'll just have to find out after...
+    <div float="right" class="img"><img src="./resources/grid8.png" /></div>
+
+- Uh oh. Now we have our right column overflowing out of our container!
+
+- There must be some way to prevent such a catastrophe.
+
+- I guess we'll just have to find out after...
 
 ## Practice!
 
-Time to take a little while to put what you just learned into practice.
+- Time to take a little while to put what you just learned into practice.
 
 Navigate to [the practice exercise](https://github.com/donhamiltoniii/css-grid-static-practice) in your browser and follow the instructions to get started.
 
@@ -219,15 +306,31 @@ Navigate to [the practice exercise](https://github.com/donhamiltoniii/css-grid-s
 
 ## fr Unit
 
-So we last left off with a grid that looks pretty good. We had nice organized content in two columns with four sized rows, nicely centered in our page. Then, we added gutters which fixed the problem of condensed content but created a whole new problem, OVERFLOWING COLUMNS!
+- So we last left off with a grid that looks pretty good. 
 
-This is no good. This is no good at all. So it looks like we need something like a dynamic column measurement. Some way to say we want two columns that should be equal and not be affected by the size of our gutters.
+- We had nice organized content in two columns with four sized rows, nicely centered in our page.
 
-If the title didn't give it away, it's the `fr` (fraction) unit. This unit does exactly that. Let's see it in action.
+- Then, we added gutters which fixed the problem of condensed content but created a whole new problem, OVERFLOWING COLUMNS!
+
+- This is no good. This is no good at all.
+
+- So it looks like we need something like a dynamic column measurement.
+
+- Some way to say we want two columns that should be equal and not be affected by the size of our gutters.
+
+- If the title didn't give it away, it's the `fr` (fraction) unit. 
+
+- This unit does exactly that. Let's see it in action.
 
 !SLIDE
 
-`fr` is used the same way we were using our `px` measurements in our earlier example. So, let's change the code to use this new unit instead.
+- `fr` is used the same way we were using our `px` measurements in our earlier example. 
+
+- So, let's change the code to use this new unit instead.
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
 
 ```css
 .container {
@@ -239,18 +342,26 @@ If the title didn't give it away, it's the `fr` (fraction) unit. This unit does 
     width: 1000px;
 }
 ```
+## We should all be here
 
-!SLIDE
+- You'll notice that we now have a grid that looks very much like what we were going for the first time.
 
-You'll notice that we now have a grid that looks very much like what we were going for the first time. The columns obviously aren't exactly `500px` wide but that's ok.
+- The columns obviously aren't exactly `500px` wide but that's ok.
 
-![Grid with 'fr' units](./resources/grid-with-fr-units.png)
 
-I'm not a fan of that repetition though. Let's take care of that with...
+    <div float="right" class="img"><img src="./resources/grid9.png" /></div>
+
+- I'm not a fan of that repetition though. Let's take care of that with...
 
 ## repeat()
 
-Oh CSS functions, how I love thee. The repeat function takes two arguments, first, the number of columns (or rows) you want, and what value you want them to have. Let's change our code in TWO places to use this new function.
+- Oh CSS functions, how I love thee. 
+
+- The repeat function takes two arguments, first, the number of columns (or rows) you want, and what value you want them to have.
+
+- Let's change our code in TWO places to use this new function.
+
+- Select save all, then select Google Chrome.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -263,19 +374,11 @@ width: 1000px;
 }
 </code></pre>
 
-Notice that you are able to use this function inline with other size declarations no problem.
-
-!SLIDE
-
-<img src="./resources/mind-blown.gif" alt="mind blown" style="width: 600px;">
-
-<div class="fragment">
-    <p>Yea. I did.</p>
-</div>
+- Notice that you are able to use this function inline with other size declarations no problem.
 
 ## Other Noteable Values
 
-You can use ANY measurement unit you have at your disposal as column/row values. Some to be especially aware of are:
+- You can use ANY measurement unit you have at your disposal as column/row values. Some to be especially aware of are:
 
 | Unit | Function |
 | ---- | -------- |
@@ -285,7 +388,11 @@ You can use ANY measurement unit you have at your disposal as column/row values.
 
 ## Container revisited
 
-So our columns are behaving flexibly now but our container still has a fixed width. I'm not ok with that and you shouldn't be either. Let's make some changes to make it a little less rigid.
+- So our columns are behaving flexibly now but our container still has a fixed width.
+
+- I'm not ok with that and you shouldn't be either.
+
+- Let's make some changes to make it a little less rigid.
 
 ```css
 .container {
@@ -299,11 +406,11 @@ So our columns are behaving flexibly now but our container still has a fixed wid
 }
 ```
 
-Again, let's dive a little deeper:
+- Again, let's dive a little deeper:
 
 !SLIDE
 
-So, what used to be `width` is now `max-width`.
+- So, what used to be `width` is now `max-width`.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -317,11 +424,11 @@ So, what used to be `width` is now `max-width`.
 }
 </code></pre>
 
-This style rule is saying the container can be any width in pixels up to `1000px`. Once it hits `1000px`, it stops.
+- This style rule is saying the container can be any width in pixels up to `1000px`. Once it hits `1000px`, it stops.
 
 !SLIDE
 
-And now our `width` is set to `90%`
+- And now our `width` is set to `90%`
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -335,19 +442,35 @@ And now our `width` is set to `90%`
 }
 </code></pre>
 
-Since `max-width` is a flexible rule `width` takes precedence until the condition for `max-width` is met. So when our viewport is slimmer than `1000px`, the width of our container is `90%`.
+- Since `max-width` is a flexible rule `width` takes precedence until the condition for `max-width` is met.
+
+- So when our viewport is slimmer than `1000px`, the width of our container is `90%`.
 
 ## Spanning Columns and Rows
 
-So now you have this great grid set up and all of your content is looking GREAT (**without using a framework**). But maybe you want one of your elements to take up a whole row or maybe two cells in a column or maybe both! Ahhh! Grid has lost its efficiency!
+- So now you have this great grid set up and all of your content is looking GREAT (**without using a framework**).
+
+- But maybe you want one of your elements to take up a whole row or maybe two cells in a column or maybe both! 
+
+- Ahhh! Does it seem like Grid has lost its efficiency?
 
 <div class="fragment">
     <img src="./resources/wrong.jpg" alt="Wrong">
 </div>
 
+<div class="fragment">
+    Question time: If I wanted to set individual columns and rows, what plan of attack should we use?
+</div>
+
 !SLIDE
 
-We can use the commands on individual items to achieve this functionality. For example, if we wanted to have the first item span both columns in our grid:
+- We can use the commands on individual items to achieve this functionality.
+
+- For example, if we wanted to have the first item span both columns in our grid.
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
 
 ```css
 .grid-item-1 {
@@ -359,30 +482,40 @@ We can use the commands on individual items to achieve this functionality. For e
 
 !SLIDE
 
-Which will give us the following result:
+- Which will give us the following result:
 
-![Item one spans two columns](./resources/item-one-spans-two-columns.png)
+<div float="right" class="img"><img src="./resources/grid10.png" /></div>
 
-But let's get back to that three
+- But let's get back to that three
 
 ## Grid lines
 
-`grid-column-start` and `grid-column-end` are referring to what are known as grid lines.
+- `grid-column-start` and `grid-column-end` are referring to what are known as grid lines.
 
 <div style="text-align: auto;">
 <img style="height: 400px; width: 400px; auto; margin-right: 200px;" src="./resources/grid-column-line.png" alt="grid column line">
 <img style="height: 400px; width: 400px;" src="./resources/grid-row-line.png" alt="grid row line">
 </div>
 
-There are both four column and four row lines in the grids above. The left image shows the third column line while the right image shows the third row line. This is what we're referencing when in `grid-column-start` and `grid-column-end`
+- There are both four column and four row lines in the grids above.
+
+- The left image shows the third column line while the right image shows the third row line.
+
+- This is what we're referencing when in `grid-column-start` and `grid-column-end`
 
 !SLIDE
 
-What if, for some reason, you didn't know how many columns you have? How would you reference the last grid line?
+- What if, for some reason, you didn't know how many columns you have? 
 
-Well grid is pretty resourceful that way. You can use negative numbers to reference grid lines in reverse order so the last grid line is -1, the second to last is -2, third to last -3, etc.
+- How would you reference the last grid line?
 
-So we can always reference the last grid line with -1. So the following does the same as our current code:
+- Well grid is pretty resourceful that way. 
+
+- You can use negative numbers to reference grid lines in reverse order so the last grid line is -1, the second to last is -2, third to last -3, etc.
+
+- So we can always reference the last grid line with -1. 
+
+- So the following does the same as our current code:
 ```css
 .grid-item-1 {
     grid-column-start: 1;
@@ -392,7 +525,15 @@ So we can always reference the last grid line with -1. So the following does the
 
 !SLIDE
 
-But, what if we just wanted our item to span two columns no matter how many columns there are? There's a solution for that too. For that we use a shorthand that combines the two rules into one. The first parameter applies a value to `grid-column-start`, the second to `grid-column-end`
+- But, what if we just wanted our item to span two columns no matter how many columns there are?
+
+- There's a solution for that too. For that we use a shorthand that combines the two rules into one.
+
+- The first parameter applies a value to `grid-column-start`, the second to `grid-column-end`
+
+- Add the following code to your styleTwo.css page.
+
+- Select save all, then select Google Chrome.
 
 ```css
 .grid-item-1 {
@@ -409,18 +550,51 @@ grid-template-columns: repeat(3, 1fr);
 
 Here's what we get from that:
 
-![grid with item 1 spanning 2 columns and an extra column](./resources/add-a-third-column.png)
+<div float="right" class="img"><img src="./resources/grid10.png" /></div>
 
 ## Handling content
 
-I would suggest only explicitly sizing either your columns or your rows unless you have a very specific reason to do otherwise. Usually I would only put values on columns and let your content size the rows for you. We'll look at how to handle your content inside of a grid cell another time. For now, it's time for more...
+- I would suggest only explicitly sizing either your columns or your rows unless you have a very specific reason to do otherwise.
+
+- Usually I would only put values on columns and let your content size the rows for you.
+
+- We'll look at how to handle your content inside of a grid cell another time. For now, it's time for more...
 
 ## Practice!
 
-From your command line, change branches to `css-grid-dynamic-practice` and look at the new example image. Make yours look the same using the new techniques we've learned. If you finish early, check out [Grid By Example](https://gridbyexample.com/) for an even more in-depth look at CSS Grid. Also, If you'd like to check out the code for the grid used in this example, feel free to clone from [here](https://github.com/donhamiltoniii/css-grid-slide-example).
+- The following slides are examples of CSS-Grid models.
+
+- Recreate each model exactly as they are shown including color.
+
+## Practice One
+
+<div float="right" class="img"><img src="./resources/Practice1.png" /></div>
+
+## Practice Two
+
+<div float="right" class="img"><img src="./resources/Practice2.gif" /></div>
+
+## Practice Three
+
+<div float="right" class="img"><img src="./resources/Practice3.gif" /></div>
+
+## Practice Four
+
+<div float="right" class="img"><img src="./resources/Practice4.gif" /></div>
+
+## Practice Five
+
+<div float="right" class="img"><img src="./resources/Practice5.gif" /></div>
 
 ### Other Resources
 - [Intro to CSS Grid Layout](https://mozilladevelopers.github.io/playground/)
 - [Grid by Example](https://gridbyexample.com/)
 - [An Introduction to CSS Grid Layout: Part 1](https://hacks.mozilla.org/2017/10/an-introduction-to-css-grid-layout-part-1/)
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+<style type="text/css">
+.img:hover  {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+</style>
