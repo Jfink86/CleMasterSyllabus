@@ -288,10 +288,15 @@ class Dishwasher : Appliances
 
 ## PRACTICE!!
 
-Create an abstract Account class.
-<div class="fragment">Create two derived classes from the base Account class.</div>
-<div class="fragment">Create an abstract method in the base Account class.</div>
-<div class="fragment">Override that method in your derived classes.</div>
+Create an abstract Furniture class.
+- Create fields and/or Properties in the Furniture class that relate to all furniture types.
+- Create an abstract method in your Furniture class.
+- Create three derived classes of types of furniture.
+- Each type of furniture should have three fields and/or Properties.
+- Each type of furniture should have its own, non-override method.
+- Each type of furniture should also have a method that overrides the abstract method in the Furniture class.
+- In your Program class, instantiate an object of each type of furniture.
+- Use all methods from all derived classes inside of your Program class.
 
 
 
