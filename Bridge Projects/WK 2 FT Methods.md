@@ -19,7 +19,7 @@ process the user's input.
 
 ### Part 2
 - [ ] Create a Method that greets the user
-  - [ ] This user should take two 'string' parameters (such as first name and last name)
+  - [ ] This method should take two 'string' parameters (such as first name and last name)
   - [ ] This Method should return a 'string'
   - [ ] When this method is used, it should print to the console "Greetings, ______ _______. I will tell you your fortune!"
    - [ ] example: "Greetings, Daniel Vivacqua. I will tell you your fortune!"
