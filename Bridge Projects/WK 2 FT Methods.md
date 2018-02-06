@@ -1,5 +1,5 @@
 # FortuneTellerMethod
-## Due: Tuesday, January 17th by 9:30 AM
+## Due: 
 
 ## Overview
 Develop a console application that will tell the user’s fortune based on data received from the user, using Methods to 
@@ -19,7 +19,7 @@ process the user's input.
 
 ### Part 2
 - [ ] Create a Method that greets the user
-  - [ ] This user should take two 'string' parameters (such as first name and last name)
+  - [ ] This method should take two 'string' parameters (such as first name and last name)
   - [ ] This Method should return a 'string'
   - [ ] When this method is used, it should print to the console "Greetings, ______ _______. I will tell you your fortune!"
    - [ ] example: "Greetings, Daniel Vivacqua. I will tell you your fortune!"
@@ -58,5 +58,3 @@ process the user's input.
 - [ ] Determine which of the methods in this project could be converted to 'void' methods, and write out those 'void' methods below the rest of your code, commented out with "//"
 
 
-### Project Submission
-[GitHub Submission Link](https://docs.google.com/forms/d/e/1FAIpQLSdl1lzsnDkApOE8pK_4tGDGwbYryTeQKcJcJF9uZW4oSTvOYQ/viewform)
