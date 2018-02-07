@@ -5,20 +5,38 @@ So, you have some experience under your belt in the care and feeding of a virtua
 ## Setup
 
 - [ ] Create a C# project in Visual Studio named `VirtualPetShelter`.
-- [ ] Create a README.md file in your project folder to describe what you've done with your project. No fancy formatting is necessary. Just separate paragraphs with an empty line. (If you'd like to learn more about Markdown formatting, check out the [Github Markdown Guide](https://guides.github.com/features/mastering-markdown/).)
 - [ ] Create a GitHub repository also named `VirtualPetShelter` and set it up so that you can push your code there from your Visual Studio project. Do this *now*. It's the least fun part, so just get it out of the way.
 - Create the following classes:
 	- [ ] `VirtualPet`: You can start with your class from last week's assignment or create another.
+	- [ ] A class that is derived and has `VirtualPet` as its base class.
 	- [ ] `VirtualPetShelter`: Homeless virtual pets need a place to stay.
+	- [ ] `Employee` base class.
+		- [ ] One property (perhaps EmployeeID)
+		- [ ] Two abstract methods
+	- [ ] `Volunteer` class derived from `Employee`
+		- [ ] An override method
+		- [ ] An additional property
+	- [ ] `Manager` class derived from `Employee`
+		- [ ] An override method
+		- [ ] An additional property
 - Your Program class will house your `main` method, and be responsible for reading user input and writing output to the console.
 
 ## Details
 
-We're going to create an application that simulates you taking care of the pets in a shelter.
+We're going to create an application that simulates employees taking care of the pets in a shelter.
 
-Include a game loop in this project, too. It should prompt the user, then call the appropriate method(s) on `VirtualPetShelter` and/or `VirtualPet`.
+Include a game loop in this project, too. It should prompt the user, then call the appropriate method(s) on any of the required classes.
 
+### Example Employee Set Up
+
+```bash
+Welcome to Big Al's Virtual Pet Shelter. What employee type are you?
+1. Manager
+2. Volunteer
+```
 ### Example Interactions
+
+For volunteer:
 
 ```bash
 Thank you for volunteering at Big Al's Virtual Pet Shelter and Delicatessen!
@@ -37,9 +55,19 @@ What would you like to do next?
 1. Feed the pets
 2. Water the pets
 3. Play with a pet
-4. Adopt a pet
-5. Admit a pet
-6. Quit
+4. Quit
+```
+For manager:
+
+```bash
+Thank you for working at Big Al's Virtual Pet Shelter and Delicatessen!
+
+What would you like to do?
+1. Adopt a pet
+2. Feed the pets
+3. Play with a pet
+4. Pay the bills
+5. Quit
 ```
 
 #### Example Pet Selection Interaction
@@ -63,17 +91,15 @@ Ok, you play with Tommy.
 ### Program class
 
 - In the `main` method have a program that…
-	- [ ] implements a *game loop*.
 	- [ ] asks for user input.
 	- [ ] writes output to the console.
 	- [ ] calls `VirtualPetShelter`'s `tick` method after each interaction
 
 - Available user interface actions should include (at minimum)…
-	- [ ] feeding all the pets
-	- [ ] watering all the pets
-	- [ ] playing with an individual pet, which should display a list of pet names and descriptions, allowing a user to select one
-	- [ ] allow adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
-	- [ ] allow intake of a pet, prompting the user for the pet's information, requiring the user to (at minimum) specify name and description
+	- [ ] `Volunteer` feeding all the pets
+	- [ ] `Volunteer` watering all the pets
+	- [ ] `Volunteer` or `Manager` playing with an individual pet
+	- [ ] `Manager` to coordinate adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
 
 
 ### VirtualPetShelter class
@@ -82,11 +108,7 @@ Ok, you play with Tommy.
 - [ ] include methods that:
 	- [ ] return a `List` of all of the pets in the shelter
 	- [ ] return a specific `VirtualPet` given its name
-	- [ ] allow intake of a homeless pet
 	- [ ] allow adoption of a homeless pet
-	- [ ] feed all of the pets in the shelter
-	- [ ] water all of the pets in the shelter
-	- [ ] plays (or performs some other interaction(s)) with an individual pet in the shelter
 - [ ] include a `tick` method that calls the `tick` method for each of the pets in the shelter, updating their needs
 
 ### VirtualPet class
@@ -99,6 +121,12 @@ In addition to the requirements from last week's project,
 - include a constructor that, in addition to name and description, accepts starting values for the pet's attributes (hunger, boredom, etc)
 
 Remember that it is OK to have more than one constructor. This will be called an **overloaded** constructor
+
+### Class derived from VirtualPet
+
+- Include instance variables (fields/Properties) representing:
+	- [ ] type of pet
+	- [ ] pet's specific diet
 
 ## Stretch Tasks
 
