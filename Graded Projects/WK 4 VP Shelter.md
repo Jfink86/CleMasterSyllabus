@@ -27,9 +27,12 @@ So, you have some experience under your belt in the care and feeding of a virtua
 	- [ ] `Volunteer` class derived from `Employee`
 		- [ ] An override method
 		- [ ] An additional property
+		- [ ] A method for feeding all of the pets
+		- [ ] A method for giving water to all of the pets
 	- [ ] `Manager` class derived from `Employee`
 		- [ ] An override method
 		- [ ] An additional property
+		- [ ] A method for adopting a pet
 - Your Program class will house your `main` method, and be responsible for reading user input and writing output to the console.
 
 ## Details
@@ -137,6 +140,20 @@ Remember that it is OK to have more than one constructor. This will be called an
 - Include instance variables (fields/Properties) representing:
 	- [ ] type of pet
 	- [ ] pet's specific diet
+
+### Employee Classes
+- [ ] `Employee` base class.
+		- [ ] One property (perhaps EmployeeID)
+		- [ ] Two abstract methods (for example, ClockIn() or ShowID())
+	- [ ] `Volunteer` class derived from `Employee`
+		- [ ] An override method (How does a Volunteer do one of the Employee methods differently?)
+		- [ ] An additional property (for example HoursAvailable, VolunteerType, or VolunteerSpecialty)
+		- [ ] A method for feeding all of the pets
+		- [ ] A method for giving water to all of the pets
+	- [ ] `Manager` class derived from `Employee`
+		- [ ] An override method (How does a Manager do one of the Employee methods differently?)
+		- [ ] An additional property (for example, Salary, YearsEmployed, or Department)
+		- [ ] A method for adopting a pet
 
 ## Stretch Tasks
 
