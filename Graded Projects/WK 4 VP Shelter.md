@@ -2,14 +2,25 @@
 
 So, you have some experience under your belt in the care and feeding of a virtual pet. It's time to share that with the community! Time to volunteer!
 
-## Setup
+## Skills Required
+-  Loops
+-  Lists
+-  Methods
+-  Intro to OOP
+-  Defining Classes
+-  Creating Classes and Access Modifiers
+-  Inheritance and Polymorphism
 
-- [ ] Create a C# project in Visual Studio named `VirtualPetShelter`.
-- [ ] Create a GitHub repository also named `VirtualPetShelter` and set it up so that you can push your code there from your Visual Studio project. Do this *now*. It's the least fun part, so just get it out of the way.
+## Requirements
+
+- [ ] Create a C# project in Visual Studio named `VPShelter`.
+- [ ] Create a GitHub repository also named `VPShelter` and set it up so that you can push your code there from your Visual Studio project. Do this *now*. It's the least fun part, so just get it out of the way.
 - Create the following classes:
 	- [ ] `VirtualPet`: You can start with your class from last week's assignment or create another.
 	- [ ] A class that is derived and has `VirtualPet` as its base class.
+		- [ ] Fields/Properties for the type of pet and the pet's diet
 	- [ ] `VirtualPetShelter`: Homeless virtual pets need a place to stay.
+		- [ ] Fields/Properties to store all of the pets and all of the employees
 	- [ ] `Employee` base class.
 		- [ ] One property (perhaps EmployeeID)
 		- [ ] Two abstract methods
@@ -26,6 +37,10 @@ So, you have some experience under your belt in the care and feeding of a virtua
 We're going to create an application that simulates employees taking care of the pets in a shelter.
 
 Include a game loop in this project, too. It should prompt the user, then call the appropriate method(s) on any of the required classes.
+
+### NOTE:
+
+The following examples are _GUIDELINES ONLY_, you can customize your user interface as you see fit as long as you meet all of the above requirements.
 
 ### Example Employee Set Up
 
@@ -93,7 +108,6 @@ Ok, you play with Tommy.
 - In the `main` method have a program that…
 	- [ ] asks for user input.
 	- [ ] writes output to the console.
-	- [ ] calls `VirtualPetShelter`'s `tick` method after each interaction
 
 - Available user interface actions should include (at minimum)…
 	- [ ] `Volunteer` feeding all the pets
@@ -104,12 +118,8 @@ Ok, you play with Tommy.
 
 ### VirtualPetShelter class
 
-- [ ] include appropriate instance variable(s) to store the pets who reside at the shelter
-- [ ] include methods that:
-	- [ ] return a `List` of all of the pets in the shelter
-	- [ ] return a specific `VirtualPet` given its name
-	- [ ] allow adoption of a homeless pet
-- [ ] include a `tick` method that calls the `tick` method for each of the pets in the shelter, updating their needs
+- [ ] include appropriate instance variable(s) (fields/Properties) to store the pets who reside at the shelter
+- [ ] include appropriate instance variable(s) (fields/Properties) to store all of the employees who volunteer or work at the shelter.
 
 ### VirtualPet class
 	
@@ -132,4 +142,4 @@ Remember that it is OK to have more than one constructor. This will be called an
 
 - [ ] Consider any stretch tasks from last week's project that you did not attempt.
 - [ ] Keep track of the cleanliness of individual pets' cages and offer an option in the user interface to clean pet cages
-- [ ] DNA! In order to give your pets individual character, include as part of each pet's state one or more multipliers for needs so that one pet may become hungrier/thirstier/more bored slower/faster than another pet. (*Tip: you could create a class to encapsulate this.*)
+- [ ] DNA! In order to give your pets individual character, include as part of each pet's state one or more specific parameters for needs so that one pet may become hungrier/thirstier/more bored slower/faster than another pet. (*Tip: you could create a class to encapsulate this.*)
