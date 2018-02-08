@@ -78,7 +78,7 @@ What would you like to do next?
 For manager:
 
 ```bash
-Thank you for working at Big Al's Virtual Pet Shelter and Delicatessen!
+Thank you for working at Big Al's Virtual Pet Shelter!
 
 What would you like to do?
 1. Adopt a pet
