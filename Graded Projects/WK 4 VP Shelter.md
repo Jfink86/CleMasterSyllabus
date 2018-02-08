@@ -1,6 +1,8 @@
 # Virtual Pet Shelter
+## Due: Monday 2/12/18 at 9:30AM
+### [Submission Link](https://docs.google.com/forms/d/e/1FAIpQLScUEvl_ZgH_OgBu0zbg_WIvB6zBSkkXh7wfxqjv4LwLdBDxLg/viewform)
 
-So, you have some experience under your belt in the care and feeding of a virtual pet. It's time to share that with the community! Time to volunteer!
+So, you have some experience under your belt in the care and feeding of a virtual pet. It's time to share that with the community! 
 
 ## Skills Required
 -  Loops
@@ -99,6 +101,7 @@ For [Dee Dee] type 3
 For [Tommy] type 4
 
 Which pet would you like to play with?
+
 4
 
 Ok, you play with Tommy.
@@ -113,8 +116,8 @@ Ok, you play with Tommy.
 	- [ ] writes output to the console.
 
 - Available user interface actions should include (at minimum)…
-	- [ ] `Volunteer` feeding all the pets
-	- [ ] `Volunteer` watering all the pets
+	- [ ] `Volunteer` feeding all the pets 
+	- [ ] `Volunteer` watering all the pets 
 	- [ ] `Volunteer` or `Manager` playing with an individual pet
 	- [ ] `Manager` to coordinate adoption of a pet, which should display a list of pet names and descriptions, allowing a user to select one
 
@@ -149,8 +152,8 @@ Remember that it is OK to have more than one constructor. This will be called an
 	- [ ] `Volunteer` class derived from `Employee`
 		- [ ] An override method (How does a Volunteer do one of the Employee methods differently?)
 		- [ ] An additional property (for example HoursAvailable, VolunteerType, or VolunteerSpecialty)
-		- [ ] A method for feeding all of the pets
-		- [ ] A method for giving water to all of the pets
+		- [ ] A method for feeding all of the pets (*HINT:* Don't overthink this. It can return a status of "All pets have been fed.")
+		- [ ] A method for giving water to all of the pets (see above hint)
 	- [ ] `Manager` class derived from `Employee`
 		- [ ] An override method (How does a Manager do one of the Employee methods differently?)
 		- [ ] An additional property (for example, Salary, YearsEmployed, or Department)
@@ -160,7 +163,6 @@ Remember that it is OK to have more than one constructor. This will be called an
 
 - [ ] Consider any stretch tasks from last week's project that you did not attempt.
 - [ ] Keep track of the cleanliness of individual pets' cages and offer an option in the user interface to clean pet cages
-- [ ] DNA! In order to give your pets individual character, include as part of each pet's state one or more specific parameters for needs so that one pet may become hungrier/thirstier/more bored slower/faster than another pet. (*Tip: you could create a class to encapsulate this.*)
 
 ## Hints
 - Break this project down into smaller parts. Start with your VirtualPet class and then create your derived "type of pet" class before starting the new stuff.
