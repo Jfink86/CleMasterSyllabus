@@ -130,7 +130,7 @@ Ok, you play with Tommy.
 
 ### VirtualPet class
 	
-In addition to the requirements from last week's project,
+For this week's VirtualPet, you can keep the class from last week's project and add the following, or create a new class with the following: 
 - include instance variables (fields/Properties) representing:
 	- [ ] name
 	- [ ] description
