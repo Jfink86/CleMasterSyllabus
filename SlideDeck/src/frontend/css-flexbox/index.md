@@ -18,15 +18,15 @@ theme: league
 
 - This time we make it a flex container
 
-## Lets do some prep work
+## Let's do some prep work
 
 - Add another HTML page to your SuperDopeWebSite.
 
 - Name your new HTML page <mark>flexEx</mark>.
 
-- Add another style sheet to your SuperDopeWebSite.
+- Add another stylesheet to your SuperDopeWebSite.
 
-- Name your new style sheet <mark>styleThree</mark>.
+- Name your new stylesheet <mark>styleThree</mark>.
 
 - Link your styleThree file to your flexEx.html page
 
@@ -145,7 +145,7 @@ theme: league
 
 ## We should all be here
 
-- Open Google Developer tools, and lets look over what we have accomplished.
+- Open Google Developer tools, and let's look over what we have accomplished.
 
 -Container
 
@@ -161,7 +161,7 @@ theme: league
 
 - If we look at our box model in our Google Developers tools, we can validate our settings
 
-- Now lets talk about the two types of flex containers setting: Flex and Inline-flex.
+- Now let's talk about the two types of flex containers setting: Flex and Inline-flex.
 
 
 ## Flex
@@ -186,7 +186,7 @@ theme: league
 
 - Open Google Developer tools and select the container to view the box model.
 
-- Now make the following changes to you styleTwo.css
+- Now make the following changes to your styleTwo.css
 
 ```CSS
 .container {
@@ -232,7 +232,7 @@ theme: league
 
 - The next value to discuss is `row-reverse`.
 
-- Add the following code to you styleThree.css page.
+- Add the following code to your styleThree.css page.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -256,7 +256,7 @@ theme: league
 
 - Next we're going to get into `column`.
 
-- Make the following changes to you styleThree.css page.
+- Make the following changes to your styleThree.css page.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -314,11 +314,11 @@ theme: league
 
 - One of the first issues to deal with is wrapping content.
 
-- You'll notice if you compress your window, your flex items dissapear.
+- You'll notice if you compress your window, your flex items disappear.
 
 - We can fix this with another simple addition to our flexbox rules.
 
-- Make the following changes and add the following code to you styleThree.css
+- Make the following changes and add the following code to your styleThree.css
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -337,7 +337,7 @@ theme: league
 
   <div float="right" class="img"><img src="./resources/flex8.png" /></div>
 
-- Now whenever our container is too narrow for our content to fit in one line, it will split onto as many lines as it needs to display properly.
+- Now whenever our container is too narrow for our content to fit in one line, it will split into as many lines as it needs to display properly.
 
 <div class="fragment">
     <p>Other options are `nowrap` and `wrap-reverse`. Play around with both to see their functionality.</p>
@@ -547,9 +547,9 @@ theme: league
 
 !SLIDE
 
-- As it's name implies, `stretch` stretches all elements to take up all space available on the cross axis:
+- As its name implies, `stretch` stretches all elements to take up all space available on the cross axis:
 
-- I drew the black box inorder to give you a frame of reference as to exactly what is happening.
+- I drew the black box in order to give you a frame of reference as to exactly what is happening.
 
 <div class="fragment">
   <div float="right" class="img"><img src="./resources/flex15.png" /></div>
@@ -706,7 +706,7 @@ Content.👏 Aligned.👏 To.👏 The.👏 Center.👏 Of.👏 A.👏 Container.
 
   <div float="right" class="img"><img src="./resources/flex20.png" /></div>
 
-- Let's change the `flex-grow` property of item 3 and see how it's affacted.
+- Let's change the `flex-grow` property of item 3 and see how it's affected.
 
 - Add the following code to your styleThree.css page.
 
@@ -756,3 +756,4 @@ Clone the repository found [here](https://github.com/donhamiltoniii/flexbox-prac
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 </style>
+

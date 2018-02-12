@@ -12,12 +12,12 @@ theme: league
 
 - One method is to construct your CSS styling inside <mark>style</mark> tags within your HTML page.
 
-- The second method is to add a seperate styling sheet to your website, then referance that style sheet in your HTML page.
+- The second method is to add a seperate styling sheet to your website, then reference that style sheet in your HTML page.
 
 - We will utilize both methods
 
 
-## External Stying Sheet
+## External Styling Sheet
 
 - In your Solution Explorer, right click on <mark>SuperDopeWebSite</mark>.
 
@@ -70,9 +70,9 @@ p {
 
 - There are hundred of CSS commands we can use to style our HTML.
 
-- Covering all of them would be time consuming and ineffecient.
+- Covering all of them would be time consuming and inefficient.
 
-- We have a great resource we can reference when ever we need to find the correct CSS command.
+- We have a great resource we can reference whenever we need to find the correct CSS command.
 
 [W3Schools](https://www.w3schools.com/css/default.asp) Do not be afraid to experiment with as many CSS commands as you can.
 
@@ -118,7 +118,7 @@ If you want to change the font-family of everything .superhero class to `.sans-s
 
 - ID's are unique to whatever element they are applied to. 
 
-- The way that elements with ID's are identified are with the `#` symbol. 
+- The way that elements with IDs are identified are with the `#` symbol. 
 
 - So if you want to style the element that has the `#page-title` ID.
 
@@ -177,7 +177,7 @@ header nav .nav-items li > a:focus {
 
 - A good first step is to know what the default styles look like. 
 
-- You can check these out using the Chromes dev tools and disable any link stylesheets. 
+- You can check these out using the Chrome's dev tools and disable any link stylesheets. 
 
 - To access the dev tools inside of Chrome right-click inside of your browser window and click inspect (`<ctrl>` + `<alt>` + `<i>`).
 
@@ -192,7 +192,7 @@ header nav .nav-items li > a:focus {
 ```css
 h1 {
     background-color: #39add1; // Hexadecimal
-    border: 3px solid hsla(270, 50%, 45%, 1); // Hue, Saturtaion, Lightness, Alpha (opacity)
+    border: 3px solid hsla(270, 50%, 45%, 1); // Hue, Saturation, Lightness, Alpha (opacity)
     box-shadow: 3px 3px 3px aquamarine; // Keyword
     color: rgba(0, 255, 127, 0.9); // Red, Green, Blue, Alpha (opacity)
 }
@@ -401,3 +401,5 @@ Let's look at [this example](https://codepen.io/donhamiltoniii/pen/JyNjXM) to se
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 </style>
+
+

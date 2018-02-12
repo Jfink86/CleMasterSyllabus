@@ -24,15 +24,15 @@ theme: league
 
 - We are going to go through Grid now.
 
-## Lets do some prep work
+## Let's do some prep work
 
 - Add another HTML page to your SuperDopeWebSite.
 
 - Name your new HTML page <mark>gridEx</mark>.
 
-- Add another style sheet to your SuperDopeWebSite.
+- Add another stylesheet to your SuperDopeWebSite.
 
-- Name your new style sheet <mark>styleTwo</mark>.
+- Name your new stylesheet <mark>styleTwo</mark>.
 
 - Link your styleTwo file to your gridEx.html page
 
@@ -140,7 +140,7 @@ theme: league
 
 - This line of code is saying that we want to have `2rem` units of space on the top and bottom of our container. 
 
-- The `auto` keyword is telling our browser to take what ever space is left on the sides and distribute it evenly effectively centering our container.
+- The `auto` keyword is telling our browser to take whatever space is left on the sides and distribute it evenly effectively centering our container.
 
 <pre><code class="language-css" data-noescape>
 .container {
@@ -152,7 +152,7 @@ theme: league
 
 - Notice the repetition? 
 
-- There is a short hand when both top/bottom AND right/left share the same values.
+- There is a shorthand when both top/bottom AND right/left share the same values.
 
 - Rewrite your code as follows: `2rem auto`. 
 
@@ -376,7 +376,7 @@ width: 1000px;
 
 - Notice that you are able to use this function inline with other size declarations no problem.
 
-## Other Noteable Values
+## Other Notable Values
 
 - You can use ANY measurement unit you have at your disposal as column/row values. Some to be especially aware of are:
 
@@ -598,3 +598,5 @@ Here's what we get from that:
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 </style>
+
+

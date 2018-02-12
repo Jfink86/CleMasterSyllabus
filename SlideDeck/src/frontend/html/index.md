@@ -4,13 +4,13 @@ theme: league
 
 # What is HTML?
 
-HTML (Hyper Text Markup Language) is the first of three languages we use to create the front-end (also known as the client-side) of the web. Each of the three languages that we use (HTML, CSS, and JavaScript) have a specific job to do and it is important to keep these concerns separate. HTML's job is to structure and organize your content.
+HTML (Hypertext Markup Language) is the first of three languages we use to create the front-end (also known as the client-side) of the web. Each of the three languages that we use (HTML, CSS, and JavaScript) have a specific job to do and it is important to keep these concerns separate. HTML's job is to structure and organize your content.
 
 ## Standard HTML Document
 
 - HTML is marked up with tags. There are common tags that you will see in each HTML document. Lets open Visual Studio and create a blank html document.
 
-- Lets put what we learned to the test. I need a volunteer!!
+- Let's put what we learned to the test. I need a volunteer!!
 
     <div float="right" class="img"><img src="./resources/boot1.png" /></div>
 
@@ -36,7 +36,7 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
 - Change <mark>WebSite1</mark> to <mark>MySuperDopeWebSite</mark>. 
 
-- Your location address might have a value differant than <mark>WebSite1</mark>, not to worry just replace whatever value is there to <mark>MySuperDopeWebSite</mark>
+- Your location address might have a value different than <mark>WebSite1</mark>, not to worry just replace whatever value is there to <mark>MySuperDopeWebSite</mark>
 
 - Finally Select <mark>Ok</mark>.
 
@@ -44,7 +44,7 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
    <div float="right" class="img"><img src="./resources/boot3.png" /></div>
 
-   - Place your curser in the Solution Explorer and right click on <mark>SuperDopeWebSite</mark>
+   - Place your cursor in the Solution Explorer and right click on <mark>SuperDopeWebSite</mark>
 
    - Select <mark>Add</mark> then <mark>Add New Item</mark>.
 
@@ -64,7 +64,7 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
    <div float="right" class="img"><img src="./resources/boot5.png" /></div>
 
-## Its all about the Tags
+## It's all about the Tags
 
 ```html
 <!DOCTYPE html>
@@ -149,7 +149,7 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 &lt;/html&gt;
 </code></pre>
 
-- The `<head>` tag houses meta data for each of your pages. This content gives information to your browser about the page and content on the page. This is also where CSS and JS files can be attached to your page.
+- The `<head>` tag houses metadata for each of your pages. This content gives information to your browser about the page and content on the page. This is also where CSS and JS files can be attached to your page.
 
 ## Body Tag
 
@@ -174,9 +174,9 @@ HTML (Hyper Text Markup Language) is the first of three languages we use to crea
 
 # Box Model
 
-## Lets Build Our Super Dope Web Site
+## Let's Build Our Super Dope Website
 
-- Copy and paster the following in between the  <mark>body</mark> tags of your <mark>index.html</mark> page.
+- Copy and paste the following in between the  <mark>body</mark> tags of your <mark>index.html</mark> page.
 
 ```C#
 My Super Dope Web Page Hi, this is my super awesome fun web page where the content makes no sense but there is a lot of it. 
@@ -200,7 +200,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 
 - Lets add some HTML <mark>elements</mark> to our page.
 
-- Lets start with the <mark>h1</mark> tag. This is a <mark>header</mark> tag.
+- Let's start with the <mark>h1</mark> tag. This is a <mark>header</mark> tag.
 
 - Go ahead and type these header in between the <mark>body</mark> tags in your index.html page.
 
@@ -210,7 +210,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 - `<h2>My Super Dope Web Page</h2>`
 - `<h3>My Super Dope Web Page</h3>`
 
-- Lets publish our web page by selecting <mark>Google Chrome</mark> on the Visual Studio standard tool bar.
+- Lets publish our web page by selecting <mark>Google Chrome</mark> on the Visual Studio standard toolbar.
 
 - Your Chrome browser will open, and your index page will be displayed.
 
@@ -231,13 +231,13 @@ on the internet. Sections Section elements are good for grouping elements that b
 - `<p>Hi, this is my super awesome fun web page where the content makes no sense but there is a lot of it.</p>`
 - `<p>So let's get into some business that you can learn from.</p>`
 
-- Select <mark> CTL Shift f5</mark> to restart your browser.
+- Select <mark> Ctrl Shift f5</mark> to restart your browser.
 
 ## We should all be here
 
    <div float="right" class="img"><img src="./resources/boot7.png" /></div>
 
-   - Question time: Is there a differance between the line spacing between our paragraphs on our browser and our Visual Studio page?
+   - Question time: Is there a difference between the line spacing between our paragraphs on our browser and our Visual Studio page?
 
 ## Ordered and unordered lists
 
@@ -273,7 +273,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 
    <div float="right" class="img"><img src="./resources/boot8.png" /></div>
 
-   - Question time: What is the differance between an ordered and unordered list?
+   - Question time: What is the difference between an ordered and unordered list?
 
    - Question time: What does the <mark>start</mark> attribute do in the second ordered list?
 
@@ -281,7 +281,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 
 - Next is the <mark>section</mark>tag.
 
-- Go ahead and type these lists after your last orderlist tag in your index.html page.
+- Go ahead and type these lists after your last order list tag in your index.html page.
 
 - Select <mark> CTL Shift f5</mark> to restart your browser.
 
@@ -368,7 +368,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 	<img src = "https://i.ytimg.com/vi/sGGb2qnIcrQ/maxresdefault.jpg"><img>
 </section>
 ```
-## Ttiles
+## Tiles
 
 - Next is the <mark>title</mark> tag.
 
@@ -407,7 +407,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 
 ```html
 <div>
-    <h2>Wonder Women</h2>
+    <h2>Wonder Woman</h2>
     <h3>Super Hero</h3>
     <p>10/13/2017</p>
 </div>
@@ -443,7 +443,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 
 - ID's are identified by a <mark>#</mark> in front of the element identifier.
 
-- Lets go back to our first <mark>h1</mark> element, and add the following
+- Let's go back to our first <mark>h1</mark> element, and add the following
 
 ```html
 <h1 id="page-title">My Super Dope Web Page</h1>
@@ -481,7 +481,7 @@ on the internet. Sections Section elements are good for grouping elements that b
 
 ```HTML
 <div class="superhero">
-        <h2>Wonder Women</h2>
+        <h2>Wonder Woman</h2>
         <h3>Super Hero</h3>
         <p>10/13/2017</p>
 </div>
@@ -524,3 +524,5 @@ Inline elements will only take up as much space as their content requires. Think
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 </style>
+
+
