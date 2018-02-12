@@ -1,10 +1,9 @@
 
 # Bank Account Project
-## Due: 
-### - [Submission Link](https://docs.google.com/forms/d/e/1FAIpQLScUEvl_ZgH_OgBu0zbg_WIvB6zBSkkXh7wfxqjv4LwLdBDxLg/viewform)
+
 
 ## Overview
-You will be designing a console application to manage a client’s bank account. For now, the application will have only one client that is hard-coded into the system. The client has one checking account and one savings account.
+You will be designing a console application to manage a clientâ€™s bank account. For now, the application will have only one client that is hard-coded into the system. The client has one checking account and one savings account.
 
 ## Skills Required
 - OOP
