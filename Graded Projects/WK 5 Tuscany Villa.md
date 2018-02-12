@@ -32,7 +32,6 @@ In order to deliver this webpage solution, you will need the following skills an
 -  HTML5
 -  CSS Styling
 -  CSS Grids
--  Flexbox
 
 ## Tasks
 
@@ -52,8 +51,6 @@ After you have completed all coding and testing of your website, you will ensure
 - [ ] Custom CSS
   - [ ] Add a custom stylesheet to incorporate required styling
   - [ ] The use of inline or internal stying is not authorized!
-- [ ] Flexbox
-  - [ ] Utilize Flexbox to make the site responsive.
 
 ### Stretch Tasks
 
