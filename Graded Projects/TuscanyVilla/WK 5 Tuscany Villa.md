@@ -57,11 +57,11 @@ After you have completed all coding and testing of your website, you will ensure
 - [ ] Explore using `:hover` and CSS transitions to make the site more dynamic
 
 
-![animated version](responsiveanim.gif)
 
-![responsive screenshot](responsive1.png)
 
-![multiple layout sizes](responsive2.jpg)
+![responsive screenshot](mockup.png)
+
+
 
 
 ### Stretch Tasks
